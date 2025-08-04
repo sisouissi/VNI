@@ -59,7 +59,7 @@ export const CompensationFuitesSection: React.FC = () => (
             </p>
              <div className="bg-red-50 p-4 rounded-lg border border-red-200">
                 <h4 className="font-semibold text-red-800 mb-2">Problème : Cyclage Tardif</h4>
-                <p className="text-sm text-slate-700">Si le débit de fuite est supérieur au seuil de cyclage (ex: fuite > 25% du pic de débit), le ventilateur ne s'arrête jamais d'insuffler. Cela crée un inconfort majeur et une hyperinflation dynamique, car le patient tente d'expirer contre le flux inspiratoire.</p>
+                <p className="text-sm text-slate-700">Si le débit de fuite est supérieur au seuil de cyclage (ex: fuite supérieure à 25% du pic de débit), le ventilateur ne s'arrête jamais d'insuffler. Cela crée un inconfort majeur et une hyperinflation dynamique, car le patient tente d'expirer contre le flux inspiratoire.</p>
             </div>
             <div className="bg-green-50 p-4 mt-6 rounded-lg border border-green-200">
                 <h4 className="font-semibold text-green-800 mb-2 flex items-center">
