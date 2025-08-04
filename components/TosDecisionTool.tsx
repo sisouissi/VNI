@@ -72,27 +72,27 @@ export const TosDecisionTool: React.FC = () => {
                 return (
                      <QuestionCard icon={<FlaskConical className="w-8 h-8"/>} question="Quel est le taux de bicarbonates sériques ?">
                         <DecisionButton onClick={() => handleDecision('abg')} color="red">≥ 27 mmol/L</DecisionButton>
-                        <DecisionButton onClick={() => handleDecision('result_soh_unlikely')} color="green">{"< 27 mmol/L"}</DecisionButton>
+                        <DecisionButton onClick={() => handleDecision('result_soh_unlikely')} color="green">{"inférieur à 27 mmol/L"}</DecisionButton>
                     </QuestionCard>
                 );
             case 'abg':
                  return (
                     <QuestionCard icon={<Heart className="w-8 h-8"/>} question="Gazométrie artérielle : Quelle est la PaCO₂ ?">
                         <DecisionButton onClick={() => handleDecision('psg')} color="red">≥ 45 mmHg</DecisionButton>
-                        <DecisionButton onClick={() => handleDecision('result_soh_unlikely')} color="green">{"< 45 mmHg"}</DecisionButton>
+                        <DecisionButton onClick={() => handleDecision('result_soh_unlikely')} color="green">{"inférieur à 45 mmHg"}</DecisionButton>
                     </QuestionCard>
                 );
              case 'psg':
                  return (
                     <QuestionCard icon={<Moon className="w-8 h-8"/>} question="Polysomnographie : Quel est l'IAH ?">
                         <DecisionButton onClick={() => handleDecision('result_cpap')} color="red">IAH ≥ 30/h (SAOS sévère)</DecisionButton>
-                        <DecisionButton onClick={() => handleDecision('result_niv')} color="amber">IAH {"< 30/h (pas de SAOS sévère)"}</DecisionButton>
+                        <DecisionButton onClick={() => handleDecision('result_niv')} color="amber">IAH {"inférieur à 30/h (pas de SAOS sévère)"}</DecisionButton>
                     </QuestionCard>
                 );
             case 'cpap_followup':
                  return (
                     <QuestionCard icon={<ListChecks className="w-8 h-8"/>} question="Après 1-3 mois de CPAP bien suivie, la PaCO₂ est-elle normalisée ?">
-                        <DecisionButton onClick={() => handleDecision('result_cpap_success')} color="green">Oui, PaCO₂ {"< 45 mmHg"}</DecisionButton>
+                        <DecisionButton onClick={() => handleDecision('result_cpap_success')} color="green">Oui, PaCO₂ {"inférieur à 45 mmHg"}</DecisionButton>
                         <DecisionButton onClick={() => handleDecision('result_niv')} color="red">Non, PaCO₂ persistante ≥ 45 mmHg</DecisionButton>
                     </QuestionCard>
                 );

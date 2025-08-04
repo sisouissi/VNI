@@ -48,7 +48,7 @@ export const PostExtubationSection: React.FC = () => (
         <KeyPointsCard>
             <li>La VNI en <strong>prévention</strong> est recommandée chez les <strong>patients à haut risque</strong> d'échec d'extubation pour réduire le risque de réintubation.</li>
             <li>La VNI en <strong>traitement</strong> d'une insuffisance respiratoire post-extubation <strong>déjà installée est déconseillée</strong> car elle retarde la réintubation et augmente la mortalité.</li>
-            <li>L'identification des patients à haut risque est cruciale (âge > 65 ans, BPCO, insuffisance cardiaque, toux inefficace, etc.).</li>
+            <li>L'identification des patients à haut risque est cruciale (âge supérieur à 65 ans, BPCO, insuffisance cardiaque, toux inefficace, etc.).</li>
             <li>L'oxygénothérapie à haut débit (OHD) est une alternative de plus en plus utilisée et étudiée dans ce contexte.</li>
         </KeyPointsCard>
 
@@ -59,12 +59,12 @@ export const PostExtubationSection: React.FC = () => (
             <div className="grid md:grid-cols-2 gap-6">
                 <InfoCard title="Qui sont les patients à haut risque ?" icon={<Users className="w-5 h-5"/>} variant="amber">
                     <ul className="list-disc list-inside">
-                        <li>Âge > 65 ans.</li>
+                        <li>Âge supérieur à 65 ans.</li>
                         <li>Insuffisance cardiaque sous-jacente (cause de l'intubation).</li>
                         <li>Pathologie respiratoire chronique (BPCO modérée à sévère).</li>
                         <li>Toux inefficace ou sécrétions abondantes.</li>
                         <li>Échec d'une première épreuve de sevrage.</li>
-                        <li>Score APACHE II > 12 à l'admission.</li>
+                        <li>Score APACHE II supérieur à 12 à l'admission.</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Bénéfices Démontrés" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
@@ -104,7 +104,7 @@ export const PostExtubationSection: React.FC = () => (
                     <li><strong>Mode :</strong> VNI (Bi-level) en mode S/T (Spontané/Temporisé).</li>
                     <li><strong>EPAP / PEEP :</strong> <strong>5 à 8 cmH₂O</strong> pour contrer l'atélectasie et l'œdème glottique.</li>
                     <li><strong>Aide Inspiratoire (AI) :</strong> <strong>8 à 12 cmH₂O</strong> pour décharger les muscles respiratoires.</li>
-                    <li><strong>FiO₂ :</strong> Pour SpO₂ > 92%.</li>
+                    <li><strong>FiO₂ :</strong> Pour SpO₂ supérieur à 92%.</li>
                     <li><strong>Durée :</strong> Appliquée de manière intermittente ou continue pendant les premières 24-48 heures.</li>
                 </ul>
             </InfoCard>

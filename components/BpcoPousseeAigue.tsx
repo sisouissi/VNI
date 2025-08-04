@@ -37,7 +37,7 @@ export const BpcoPousseeAigue: React.FC = () => {
                 <h4 className="font-semibold text-slate-800 mb-2">Critères d'initiation :</h4>
                 <p>La VNI doit être débutée si l'acidose respiratoire persiste malgré un traitement médical optimal bien conduit (oxygénothérapie contrôlée, bronchodilatateurs, corticostéroïdes) :</p>
                 <ul className="list-disc list-inside mt-2 space-y-1 text-slate-700">
-                    <li><strong>pH &lt; 7.35 ET PaCO₂ &gt; 45 mmHg (6.5 kPa)</strong></li>
+                    <li><strong>pH inférieur à 7.35 ET PaCO₂ supérieur à 45 mmHg (6.5 kPa)</strong></li>
                     <li>Associé à une dyspnée sévère avec signes de fatigue musculaire (respiration paradoxale, utilisation des muscles accessoires).</li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@ export const BpcoPousseeAigue: React.FC = () => {
                 <InfoCard title="Signes d'Échec" icon={<XCircle className="w-5 h-5"/>} variant="red">
                      <ul className="list-disc list-inside">
                         <li>Pas d'amélioration ou aggravation des GDS.</li>
-                        <li>FR &gt; 30/min persistante.</li>
+                        <li>FR supérieur à 30/min persistante.</li>
                         <li>Agitation, épuisement.</li>
                         <li>Instabilité hémodynamique.</li>
                     </ul>

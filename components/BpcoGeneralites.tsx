@@ -39,7 +39,7 @@ export const BpcoGeneralites: React.FC = () => {
       </p>
       
       <KeyPointsCard>
-        <li><strong>En aigu :</strong> La VNI est le traitement de première intention pour l'exacerbation avec <strong>acidose respiratoire (pH &lt; 7.35)</strong>. Elle doit être débutée précocement pour réduire la mortalité et le besoin d'intubation.</li>
+        <li><strong>En aigu :</strong> La VNI est le traitement de première intention pour l'exacerbation avec <strong>acidose respiratoire (pH inférieur à 7.35)</strong>. Elle doit être débutée précocement pour réduire la mortalité et le besoin d'intubation.</li>
         <li><strong>En chronique :</strong> Indiquée pour l'hypercapnie diurne persistante (<strong>PaCO₂ ≥ 52 mmHg</strong>). Vise à améliorer la <strong>survie</strong> chez les patients stables et à réduire les <strong>réadmissions</strong> chez ceux en post-exacerbation.</li>
         <li><strong>La cible d'oxygénation</strong> est fondamentale : <strong>88-92% de SpO₂</strong>. L'hyperoxie est dangereuse et aggrave l'hypercapnie.</li>
         <li>Les réglages de la VNI doivent être <strong>actifs ("haute intensité")</strong> pour être efficaces, visant à corriger l'hypercapnie.</li>

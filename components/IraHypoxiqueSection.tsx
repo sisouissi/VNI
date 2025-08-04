@@ -78,7 +78,7 @@ export const IraHypoxiqueSection: React.FC = () => {
             </p>
             <ol className="list-decimal list-inside space-y-3 text-slate-700 text-base">
                 <li><strong>Évaluer et stabiliser l'ABC (Airway, Breathing, Circulation) :</strong> Assurer la liberté des voies aériennes, évaluer la respiration, stabiliser la tension artérielle et le rythme cardiaque.</li>
-                <li><strong>Administrer immédiatement de l'oxygène :</strong> L'objectif initial est une SpO₂ &gt; 90%. La méthode d'administration dépend de la gravité (voir ci-dessous).</li>
+                <li><strong>Administrer immédiatement de l'oxygène :</strong> L'objectif initial est une SpO₂ supérieur à 90%. La méthode d'administration dépend de la gravité (voir ci-dessous).</li>
                 <li><strong>Traiter la cause présumée :</strong> Initier un traitement empirique (ex: diurétiques pour un OAP, antibiotiques pour une pneumonie) sans attendre la confirmation diagnostique complète.</li>
             </ol>
         </Accordion>
@@ -114,7 +114,7 @@ export const IraHypoxiqueSection: React.FC = () => {
                     <ul className="list-disc list-inside space-y-1">
                         <li>Le patient génère de fortes pressions négatives pleurales.</li>
                         <li>Ceci mène à des volumes courants (Vt) très élevés et à une distribution hétérogène de la ventilation.</li>
-                        <li><strong>Conséquence :</strong> Volotraumatisme, barotraumatisme et atélectotraumatisme, aggravant l'œdème et l'inflammation. Un <strong>Vt &gt; 9 ml/kg</strong> est un facteur de risque majeur d'échec de la VNI.</li>
+                        <li><strong>Conséquence :</strong> Volotraumatisme, barotraumatisme et atélectotraumatisme, aggravant l'œdème et l'inflammation. Un <strong>Vt supérieur à 9 ml/kg</strong> est un facteur de risque majeur d'échec de la VNI.</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Le Risque de l'Intubation Retardée" icon={<ShieldX className="w-5 h-5"/>} variant="red">
@@ -130,7 +130,7 @@ export const IraHypoxiqueSection: React.FC = () => {
                     <p className="font-semibold">Supérieur au masque dans plusieurs études pour l'IRA-H.</p>
                     <ul className="list-disc list-inside space-y-1 mt-2">
                         <li><strong>Avantages :</strong> Meilleure tolérance, moins de fuites, pas de lésions cutanées, permet une <strong>PEEP plus élevée</strong>. Associé à une <strong>réduction du taux d'intubation</strong>.</li>
-                        <li><strong>Inconvénients :</strong> Espace mort important (nécessite un débit de gaz élevé &gt; 40-60 L/min pour éviter la réinhalation de CO₂), bruit, asynchronie.</li>
+                        <li><strong>Inconvénients :</strong> Espace mort important (nécessite un débit de gaz élevé supérieur à 40-60 L/min pour éviter la réinhalation de CO₂), bruit, asynchronie.</li>
                     </ul>
                 </InfoCard>
                  <InfoCard title="Masque Naso-buccal" icon={<AlertTriangle className="w-5 h-5 text-amber-600"/>} variant="amber">
@@ -174,8 +174,8 @@ export const IraHypoxiqueSection: React.FC = () => {
                     </h4>
                     <ul className="space-y-2 text-red-700 text-base">
                         <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Absence d'amélioration de la FR ou de la dyspnée.</span></li>
-                        <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Score HACOR &gt; 5 après 1h.</span></li>
-                        <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Persistance d'un Vt élevé (&gt; 9 ml/kg).</span></li>
+                        <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Score HACOR supérieur à 5 après 1h.</span></li>
+                        <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Persistance d'un Vt élevé (supérieur à 9 ml/kg).</span></li>
                         <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Désaturation ou aggravation du rapport P/F ou S/F.</span></li>
                         <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Instabilité hémodynamique.</span></li>
                         <li className="flex items-start"><ShieldX className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0"/><span>Altération de la conscience.</span></li>

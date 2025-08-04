@@ -44,9 +44,9 @@ export const NmdSelectionSection: React.FC = () => (
                      <li>
                         <strong>Faiblesse musculaire respiratoire significative :</strong> Surtout dans les maladies progressives comme la SLA, des signes précoces justifient une évaluation.
                         <ul className="list-['-_'] list-inside pl-4 mt-1 font-semibold">
-                             <li>CVF &lt; 50% de la prédite.</li>
-                             <li>PIM &lt; –60 cmH₂O.</li>
-                             <li>SNIP &lt; 40 cmH₂O.</li>
+                             <li>CVF inférieur à 50% de la prédite.</li>
+                             <li>PIM inférieur à –60 cmH₂O.</li>
+                             <li>SNIP inférieur à 40 cmH₂O.</li>
                         </ul>
                     </li>
                 </ul>

@@ -48,7 +48,7 @@ export const VniAlsSection: React.FC = () => {
         <KeyPointsCard>
             <li>La VNI est le traitement de référence, même avec un support de pression faible, elle prolonge la survie.</li>
             <li>La détection précoce de l'hypoventilation nocturne est cruciale pour une initiation opportune.</li>
-            <li>L'initiation se base sur les symptômes et des mesures objectives (CVF &lt; 80%, SNIP &lt; 40 cmH₂O).</li>
+            <li>L'initiation se base sur les symptômes et des mesures objectives (CVF &lt; 80%, SNIP inférieur à 40 cmH₂O).</li>
             <li>La gestion de la toux et des sécrétions (ex: toux assistée, MI-E) est aussi vitale que le support ventilatoire.</li>
             <li>Avec la progression, c'est la durée d'utilisation de la VNI qui augmente, plus que les niveaux de pression.</li>
         </KeyPointsCard>
@@ -66,8 +66,8 @@ export const VniAlsSection: React.FC = () => {
                 <InfoCard title="Tests Fonctionnels Clés" icon={<ListChecks className="w-5 h-5"/>} variant="blue">
                      <ul className="list-disc list-inside">
                         <li><strong>CVF (assis/couché) :</strong> Corrélation avec la survie.</li>
-                        <li><strong>SNIP :</strong> Bon reflet de la force diaphragmatique (un SNIP &lt; 40 cmH₂O est prédictif d'hypoxémie nocturne).</li>
-                        <li><strong>PCF (Débit de Toux) :</strong> PCF &lt; 2.7 L/s indique une toux inefficace.</li>
+                        <li><strong>SNIP :</strong> Bon reflet de la force diaphragmatique (un SNIP inférieur à 40 cmH₂O est prédictif d'hypoxémie nocturne).</li>
+                        <li><strong>PCF (Débit de Toux) :</strong> PCF inférieur à 2.7 L/s indique une toux inefficace.</li>
                         <li><strong>Oxymétrie nocturne :</strong> Détecte l'hypoventilation précoce.</li>
                     </ul>
                 </InfoCard>

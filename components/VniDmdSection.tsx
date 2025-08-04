@@ -66,7 +66,7 @@ export const VniDmdSection: React.FC = () => {
                 <InfoCard title="Désencombrement des Voies Aériennes" icon={<Wrench className="w-5 h-5"/>} variant="green">
                     <p>La toux devient inefficace avec la progression de la maladie.</p>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                         <li><strong>Indication :</strong> Enseignement de la toux manuellement assistée lorsque le débit de toux de pointe (PCF) est &lt; 270 L/min.</li>
+                         <li><strong>Indication :</strong> Enseignement de la toux manuellement assistée lorsque le débit de toux de pointe (PCF) est inférieur à 270 L/min.</li>
                          <li><strong>Technique :</strong> La toux est assistée après avoir augmenté le volume pulmonaire par "air stacking" (empilement d'air).</li>
                          <li><strong>En cas de rhume :</strong> L'objectif est de maintenir une SpO₂ &gt; 94% en intensifiant l'aide à la toux et la VNI.</li>
                     </ul>
@@ -86,7 +86,7 @@ export const VniDmdSection: React.FC = () => {
                 <InfoCard title="Anesthésie et Sédation" icon={<AlertTriangle className="w-5 h-5"/>} variant="amber">
                     <p>Les patients DMD présentent un risque élevé de complications anesthésiques.</p>
                     <ul className="list-disc list-inside mt-2 space-y-1">
-                         <li><strong>Pré-opératoire :</strong> Évaluation pulmonaire systématique. Si CVF &lt; 30%, entraînement à la VNI. Si PCF &lt; 270 L/min, entraînement à l'aide à la toux.</li>
+                         <li><strong>Pré-opératoire :</strong> Évaluation pulmonaire systématique. Si CVF inférieur à 30%, entraînement à la VNI. Si PCF inférieur à 270 L/min, entraînement à l'aide à la toux.</li>
                          <li><strong>Post-opératoire :</strong> Monitorage continu de la SpO₂. Traiter immédiatement toute hypoventilation ou encombrement par VNI et toux assistée. Utiliser l'oxygène avec prudence.</li>
                     </ul>
                 </InfoCard>

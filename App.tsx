@@ -260,13 +260,13 @@ const AccessCodeForm: React.FC<{ onCodeSubmit: (code: string) => void }> = ({ on
           </p>
           <div className="space-y-2">
             <button 
-              onClick={() => window.open('mailto:contact@votre-domaine.com?subject=Demande de code d\'accès', '_blank')}
+              onClick={() => window.open('mailto:zouhaier.souissi@gmail.com?subject=Demande de code d\'accès', '_blank')}
               className="w-full text-blue-600 hover:text-blue-700 text-sm"
             >
               📧 Contacter par email
             </button>
             <button 
-              onClick={() => window.open('tel:+33123456789', '_blank')}
+              onClick={() => window.open('tel:+21698313576', '_blank')}
               className="w-full text-green-600 hover:text-green-700 text-sm"
             >
               📞 Appeler le support
@@ -371,14 +371,17 @@ const App: React.FC = () => {
         )}
         
         {/* Indicateur de statut */}
-        <div className="fixed bottom-4 right-4 z-10">
+        <div className="fixed bottom-4 right-4 z-10 shadow-lg animate-fade-in">
           {trialData?.hasAccessCode ? (
-            <div className="bg-green-600 text-white px-3 py-1 rounded text-sm">
+            <div className="bg-green-600 text-white px-3 py-1 rounded-lg text-sm">
               ✓ Version complète activée
             </div>
           ) : (
-            <div className="bg-blue-600 text-white px-3 py-1 rounded text-sm">
-              Période d'essai : {daysRemaining} jour{daysRemaining > 1 ? 's' : ''} restant{daysRemaining > 1 ? 's' : ''}
+            <div 
+              className="text-white px-3 py-1 rounded-lg text-sm"
+              style={{ background: 'linear-gradient(to bottom right, #1f2937, #4338ca, #6d28d9)' }}
+            >
+              🆓 Essai : {daysRemaining} jour{daysRemaining > 1 ? 's' : ''} restant{daysRemaining > 1 ? 's' : ''}
             </div>
           )}
         </div>

@@ -96,7 +96,7 @@ export const PedMaterielSection: React.FC = () => {
                 <VentilatorCard title="Appareils Standards" icon={<Home className="w-5 h-5 text-green-600"/>}>
                     <p>CPAP/BiPAP simples, petits, portables, avec humidificateur intégré.</p>
                     <p><strong>Pour qui ?</strong> Enfants avec SAOS, maladie pulmonaire chronique légère, ou MNM peu sévère où une interruption n'est pas dangereuse.</p>
-                    <p><strong>Limites :</strong> Pas d'alarmes, pas de batterie interne, données logicielles peu fiables pour les petits poids (&lt;30kg).</p>
+                    <p><strong>Limites :</strong> Pas d'alarmes, pas de batterie interne, données logicielles peu fiables pour les petits poids (inférieur à 30kg).</p>
                 </VentilatorCard>
                 <VentilatorCard title="Appareils Intermédiaires" icon={<Home className="w-5 h-5 text-blue-600"/>}>
                     <p>Pont entre les appareils standards et les supports de vie.</p>

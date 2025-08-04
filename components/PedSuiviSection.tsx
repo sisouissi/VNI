@@ -53,7 +53,7 @@ export const PedSuiviSection: React.FC = () => {
                 <ul className="list-disc list-inside space-y-1">
                     <li><strong>Pathologie sous-jacente :</strong> Le SDRA pédiatrique et la pneumonie sont des facteurs de risque d'échec.</li>
                     <li><strong>Sévérité de la maladie :</strong> Un score de mortalité pédiatrique (PRISM) ou de dysfonction d'organe (PLOD) élevé est associé à un risque plus élevé d'échec.</li>
-                    <li><strong>Non-réponse au traitement :</strong> Absence de diminution de la FR, besoin en FiO₂ persistant élevé, ou pH &lt; 7.25 après 1-2h sont des signes d'alarme.</li>
+                    <li><strong>Non-réponse au traitement :</strong> Absence de diminution de la FR, besoin en FiO₂ persistant élevé, ou pH inférieur à 7.25 après 1-2h sont des signes d'alarme.</li>
                 </ul>
                 <p className="font-bold mt-2">Un patient qui se dégrade malgré une escalade des paramètres de VNI nécessite une intubation urgente.</p>
             </InfoCard>

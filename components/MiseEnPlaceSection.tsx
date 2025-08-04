@@ -72,7 +72,7 @@ export const MiseEnPlaceSection: React.FC = () => (
                 <ul className="list-disc list-inside space-y-2 pl-4 mt-2 text-slate-700">
                     <li>Débuter avec une aide faible : <strong>4-6 cmH₂O</strong>.</li>
                     <li>Augmenter par paliers de <strong>2-3 cmH₂O</strong> jusqu'à l'obtention des effets désirés.</li>
-                    <li><strong>Objectifs :</strong> Volume courant expiré (VTe) de <strong>6-8 ml/kg</strong> de poids idéal, FR &lt; 25/min, et diminution visible du travail respiratoire.</li>
+                    <li><strong>Objectifs :</strong> Volume courant expiré (VTe) de <strong>6-8 ml/kg</strong> de poids idéal, FR inférieur à 25/min, et diminution visible du travail respiratoire.</li>
                 </ul>
             </div>
 
@@ -179,7 +179,7 @@ export const MiseEnPlaceSection: React.FC = () => (
             <h4 className="text-lg font-semibold text-slate-800 mb-3">Signes d'Amélioration & Dépannage</h4>
             <ul className="list-disc list-inside space-y-3 text-slate-700">
                 <li>
-                    <strong>Amélioration clinique :</strong> Rechercher une diminution de la FR (&lt; 25/min), une réduction du tirage, et une amélioration de l'état de conscience.
+                    <strong>Amélioration clinique :</strong> Rechercher une diminution de la FR (inférieur à 25/min), une réduction du tirage, et une amélioration de l'état de conscience.
                 </li>
                 <li>
                     <strong>Amélioration gazométrique :</strong> Confirmer l'amélioration de la SpO₂, du pH et de la PaCO₂ après 1-2 heures.
@@ -188,7 +188,7 @@ export const MiseEnPlaceSection: React.FC = () => (
                     <strong>Analyse des courbes :</strong> S'assurer que le débit expiratoire revient à zéro avant l'inspiration suivante pour éviter l'auto-PEEP. Si ce n'est pas le cas, réduire la FR ou le Ti.
                 </li>
                 <li>
-                    <strong>Gestion des fuites :</strong> Monitorer les fuites et viser un volume de fuite minute &lt; 20-25 L/min pour un adulte.
+                    <strong>Gestion des fuites :</strong> Monitorer les fuites et viser un volume de fuite minute inférieur à 20-25 L/min pour un adulte.
                 </li>
                 <li>
                     <strong>Dépannage à 1 heure :</strong>

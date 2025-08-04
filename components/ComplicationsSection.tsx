@@ -132,7 +132,7 @@ export const ComplicationsSection: React.FC = () => (
                     "Alterner les types d'interfaces pour varier les points de pression."
                 ]}/>
                  <SolutionCard title="Distension Gastrique et Inconfort" solutions={[
-                    "Limiter les pressions inspiratoires (&lt; 20-25 cmH₂O).",
+                    "Limiter les pressions inspiratoires (inférieur à 20-25 cmH₂O).",
                     "Vérifier et corriger les fuites importantes qui peuvent inciter le patient à déglutir de l'air.",
                     "Rassurer le patient pour qu'il évite d'avaler de l'air."
                 ]}/>

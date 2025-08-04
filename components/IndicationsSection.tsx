@@ -65,7 +65,7 @@ export const IndicationsSection: React.FC = () => (
             <Recommendation
                 title="BPCO en Acidose Respiratoire"
                 strength="Recommandation Forte - Haute certitude"
-                details="La VNI Bi-niveau est le traitement de choix pour l'insuffisance respiratoire aiguë (IRA) hypercapnique (<strong>pH &lt; 7.35</strong>) sur BPCO. Elle réduit le besoin d'intubation et la mortalité. La recommandation est encore plus forte pour les pH entre 7.25 et 7.35."
+                details="La VNI Bi-niveau est le traitement de choix pour l'insuffisance respiratoire aiguë (IRA) hypercapnique (<strong>pH inférieur à 7.35</strong>) sur BPCO. Elle réduit le besoin d'intubation et la mortalité. La recommandation est encore plus forte pour les pH entre 7.25 et 7.35."
                 icon={<Lungs className="w-8 h-8 text-green-600"/>}
                 variant="strong"
             />

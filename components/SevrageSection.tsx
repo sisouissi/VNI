@@ -79,7 +79,7 @@ export const SevrageSection: React.FC = () => (
                     "<b>Stabilité hémodynamique :</b> FC ≤ 140/min, PAS 90-160 mmHg, vasopresseurs minimes ou absents.",
                     "<b>Oxygénation adéquate :</b> SpO₂ ≥ 90% avec FiO₂ ≤ 40%, ou PaO₂/FiO₂ ≥ 150.",
                     "<b>Support ventilatoire faible :</b> PEEP ≤ 8 cmH₂O.",
-                    "<b>Mécanique respiratoire :</b> FR &lt; 35/min, Vt ≥ 5 ml/kg.",
+                    "<b>Mécanique respiratoire :</b> FR inférieur à 35/min, Vt ≥ 5 ml/kg.",
                     "Absence d'épisodes d'apnée significatifs."
                 ]} />
             </div>
@@ -117,7 +117,7 @@ export const SevrageSection: React.FC = () => (
              <ul className="list-disc list-inside space-y-3 text-slate-700 pl-2">
                 <li><b>Facteurs Patient :</b> Augmentation de l'effort respiratoire, utilisation des muscles accessoires, respiration paradoxale, inconfort, altération de la conscience (signe d'hypercapnie).</li>
                 <li><b>Paramètres Physiologiques :</b> Instabilité hémodynamique (tachycardie, variation de PA), polypnée, désaturation.</li>
-                <li><b>Données du Ventilateur :</b> Monitorer le Vt (cible 4-6 ml/kg), la ventilation minute, les fuites (&lt;25 L/min), et les alarmes (apnée, FR élevée).</li>
+                <li><b>Données du Ventilateur :</b> Monitorer le Vt (cible 4-6 ml/kg), la ventilation minute, les fuites (inférieur à 25 L/min), et les alarmes (apnée, FR élevée).</li>
                 <li><b>Échanges Gazeux :</b> Oxymétrie de pouls continue, et GDS artériels ou veineux pour confirmer la stabilité.</li>
             </ul>
         </Accordion>
@@ -128,12 +128,12 @@ export const SevrageSection: React.FC = () => (
                 <div>
                     <h4 className="text-lg font-semibold text-green-800 mb-3">Signes de Succès du Sevrage</h4>
                     <div className="space-y-2">
-                        <PredictorCard title="Rapport PaO₂/FiO₂" value="&gt; 200" description="1h après l'initiation de la VNI" />
-                        <PredictorCard title="Fréquence Respiratoire" value="&lt; 20-22 /min" description="Sans signe de détresse" />
-                        <PredictorCard title="pH" value="&gt; 7.33" />
-                        <PredictorCard title="Score de Glasgow" value="&gt; 13" />
-                        <PredictorCard title="Index ROX" value="&gt; 4.88" description="Après 2h de VNI" />
-                        <PredictorCard title="Score HACOR" value="&lt; 5" />
+                        <PredictorCard title="Rapport PaO₂/FiO₂" value="supérieur à 200" description="1h après l'initiation de la VNI" />
+                        <PredictorCard title="Fréquence Respiratoire" value="inférieur à 20-22 /min" description="Sans signe de détresse" />
+                        <PredictorCard title="pH" value="supérieur à 7.33" />
+                        <PredictorCard title="Score de Glasgow" value="supérieur à 13" />
+                        <PredictorCard title="Index ROX" value="supérieur à 4.88" description="Après 2h de VNI" />
+                        <PredictorCard title="Score HACOR" value="inférieur à 5" />
                     </div>
                 </div>
                  <div>
@@ -141,9 +141,9 @@ export const SevrageSection: React.FC = () => (
                      <div className="space-y-2">
                         <PredictorCard title="Rapport PaO₂/FiO₂" value="≤ 200" success={false} description="Baseline ou à 1h" />
                         <PredictorCard title="Fréquence Respiratoire" value="≥ 30 /min" success={false} />
-                        <PredictorCard title="Volume Courant (Vt)" value="&gt; 9 ml/kg" success={false} />
-                        <PredictorCard title="Index ROX" value="&lt; 4.88" success={false} description="À 12h de VNI" />
-                        <PredictorCard title="Score HACOR" value="&gt; 5" success={false} description="Dans la première heure" />
+                        <PredictorCard title="Volume Courant (Vt)" value="supérieur à 9 ml/kg" success={false} />
+                        <PredictorCard title="Index ROX" value="inférieur à 4.88" success={false} description="À 12h de VNI" />
+                        <PredictorCard title="Score HACOR" value="supérieur à 5" success={false} description="Dans la première heure" />
                         <PredictorCard title="Paramètres techniques" value="Mauvais ajustement du masque, fuites importantes, sécrétions excessives" success={false} />
                     </div>
                 </div>
@@ -162,8 +162,8 @@ export const SevrageSection: React.FC = () => (
                     <div className="p-4 bg-slate-700/50 border-l-4 border-blue-400 rounded-r-lg">
                         <h3 className="font-bold text-blue-300">1. Critères d'Éligibilité au Sevrage</h3>
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
-                        <li>PaO₂/FiO₂ &gt; 200 mmHg avec FiO₂ &lt; 0.5</li>
-                        <li>pH &gt; 7.35</li>
+                        <li>PaO₂/FiO₂ supérieur à 200 mmHg avec FiO₂ &lt; 0.5</li>
+                        <li>pH supérieur à 7.35</li>
                         <li>FR &lt; 25/min sans muscles accessoires</li>
                         <li>Stabilité hémodynamique</li>
                         </ul>
@@ -184,7 +184,7 @@ export const SevrageSection: React.FC = () => (
                         <p className="mt-1 text-sm font-semibold text-slate-200">SI le patient tolère le masque Venturi :</p>
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
                             <li>Sans détresse respiratoire</li>
-                            <li>SpO₂ &gt; 88% maintenue</li>
+                            <li>SpO₂ supérieur à 88% maintenue</li>
                             <li>Reste stable sur le plan hémodynamique et du pH</li>
                         </ul>
                         <div className="flex justify-center text-2xl font-bold text-green-400 mt-3">↓</div>
@@ -227,7 +227,7 @@ export const SevrageSection: React.FC = () => (
                     </thead>
                     <tbody>
                         <tr className="bg-white border-b">
-                            <th scope="row" className="px-4 py-4 font-medium text-slate-900">Échec Immédiat (&lt; 1h)</th>
+                            <th scope="row" className="px-4 py-4 font-medium text-slate-900">Échec Immédiat (inférieur à 1h)</th>
                             <td className="px-4 py-4">Rétention de sécrétions, encéphalopathie hypercapnique, intolérance/agitation, asynchronie majeure.</td>
                         </tr>
                         <tr className="bg-slate-50 border-b">
@@ -235,7 +235,7 @@ export const SevrageSection: React.FC = () => (
                             <td className="px-4 py-4">Anomalies persistantes des échanges gazeux, aggravation de la maladie aiguë, détresse respiratoire non soulagée.</td>
                         </tr>
                         <tr className="bg-white">
-                            <th scope="row" className="px-4 py-4 font-medium text-slate-900">Échec Tardif (&gt; 48h)</th>
+                            <th scope="row" className="px-4 py-4 font-medium text-slate-900">Échec Tardif (supérieur à 48h)</th>
                             <td className="px-4 py-4">Souvent lié à une perturbation du sommeil, des comorbidités graves.</td>
                         </tr>
                     </tbody>

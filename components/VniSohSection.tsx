@@ -56,7 +56,7 @@ export const VniSohSection: React.FC = () => {
                         <li><strong>Hypercapnie diurne :</strong> PaCO₂ ≥ 45 mmHg à l'état vigile, confirmée par gazométrie artérielle.</li>
                         <li><strong>Trouble Respiratoire du Sommeil :</strong> Démontré par polysomnographie. Environ 90% des patients ont un SAOS associé (70% ont un SAOS sévère).</li>
                     </ol>
-                    <p className="mt-2 font-semibold">Le dosage des bicarbonates sériques est un excellent outil de dépistage : un taux <strong>&lt; 27 mmol/L</strong> rend le SOH très improbable.</p>
+                    <p className="mt-2 font-semibold">Le dosage des bicarbonates sériques est un excellent outil de dépistage : un taux <strong>inférieur à 27 mmol/L</strong> rend le SOH très improbable.</p>
                 </InfoCard>
                 <InfoCard title="Physiopathologie" icon={<Activity className="w-5 h-5"/>} variant="blue">
                     <p>C'est une maladie multifactorielle :</p>
@@ -88,7 +88,7 @@ export const VniSohSection: React.FC = () => {
                     Quand passer de la CPAP à la VNI ?
                 </h5>
                 <p className="text-sm text-amber-700 mt-2">
-                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong> (&gt; plusieurs minutes à &lt;88%).
+                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong> (supérieur à plusieurs minutes à &lt;88%).
                 </p>
             </div>
         </Accordion>

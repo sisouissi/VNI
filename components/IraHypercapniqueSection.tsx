@@ -49,7 +49,7 @@ export const IraHypercapniqueSection: React.FC = () => {
         
         <KeyPointsCard>
             <li>La VNI est le <strong>traitement de première intention</strong> pour la plupart des IRA hypercapniques, surtout l'exacerbation de BPCO.</li>
-            <li>L'objectif principal est de corriger l'<strong>acidose respiratoire</strong> (pH &lt; 7.35) et de diminuer le travail respiratoire.</li>
+            <li>L'objectif principal est de corriger l'<strong>acidose respiratoire</strong> (pH inférieur à 7.35) et de diminuer le travail respiratoire.</li>
             <li>La gestion de l'oxygène est cruciale : viser une SpO₂ de <strong>88-92%</strong> pour éviter d'aggraver l'hypercapnie.</li>
             <li>Le succès ou l'échec de la VNI se juge dans les <strong>1 à 2 premières heures</strong> sur des critères cliniques et gazométriques.</li>
             <li><strong>Ne pas retarder l'intubation</strong> en cas d'échec avéré de la VNI ; c'est un facteur de surmortalité.</li>
@@ -80,8 +80,8 @@ export const IraHypercapniqueSection: React.FC = () => {
                 </InfoCard>
                 <InfoCard title="Biologie" icon={<Heart className="w-5 h-5"/>} variant="red">
                      <ul className="list-disc list-inside">
-                        <li><strong>GDS :</strong> PaCO₂ &gt; 45 mmHg (6.5 kPa)</li>
-                        <li><strong>Bicarbonates :</strong> Élevés (&gt;28 mmol/L) suggèrent une hypercapnie chronique sous-jacente.</li>
+                        <li><strong>GDS :</strong> PaCO₂ supérieur à 45 mmHg (6.5 kPa)</li>
+                        <li><strong>Bicarbonates :</strong> Élevés (supérieur à 28 mmol/L) suggèrent une hypercapnie chronique sous-jacente.</li>
                     </ul>
                 </InfoCard>
             </div>
@@ -97,7 +97,7 @@ export const IraHypercapniqueSection: React.FC = () => {
 
         <Accordion title="Le Réglage Crucial de l'Oxygène : Cible 88-92%" icon={<Target className="w-6 h-6"/>} variant="default">
              <InfoCard title="Pourquoi cette cible est-elle VITALE ?" icon={<AlertTriangle className="w-5 h-5"/>} variant="amber">
-                <p>Chez les patients "rétentionnistes" chroniques, une hyperoxie (SpO₂ &gt; 92-93%) peut :</p>
+                <p>Chez les patients "rétentionnistes" chroniques, une hyperoxie (SpO₂ supérieur à 92-93%) peut :</p>
                 <ul className="list-disc list-inside space-y-1 mt-2">
                     <li><strong>Supprimer le drive hypoxique :</strong> Le principal stimulant respiratoire chez ces patients.</li>
                     <li><strong>Aggraver les troubles V/Q :</strong> Lève la vasoconstriction pulmonaire hypoxique dans les zones mal ventilées, augmentant l'effet shunt.</li>
@@ -135,14 +135,14 @@ export const IraHypercapniqueSection: React.FC = () => {
                 <InfoCard title="Marqueurs de Succès" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
                     <ul className="list-disc list-inside">
                         <li><strong>Amélioration du pH</strong> et de la PaCO₂.</li>
-                        <li><strong>Diminution de la FR</strong> (&lt; 25/min).</li>
+                        <li><strong>Diminution de la FR</strong> (inférieur à 25/min).</li>
                         <li>Amélioration clinique : patient moins dyspnéique, moins de tirage.</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Signes d'Échec" icon={<XCircle className="w-5 h-5"/>} variant="red">
                      <ul className="list-disc list-inside">
                         <li>Pas d'amélioration ou aggravation des GDS.</li>
-                        <li>FR &gt; 30/min persistante.</li>
+                        <li>FR supérieur à 30/min persistante.</li>
                         <li>Agitation, épuisement.</li>
                         <li>Instabilité hémodynamique.</li>
                     </ul>
@@ -157,9 +157,9 @@ export const IraHypercapniqueSection: React.FC = () => {
                     Ne pas retarder l'intubation !
                 </h4>
                 <ul className="list-disc list-inside space-y-2 text-red-700 font-semibold text-base">
-                    <li>Acidose persistante (pH &lt; 7.25) ou qui s'aggrave.</li>
+                    <li>Acidose persistante (pH inférieur à 7.25) ou qui s'aggrave.</li>
                     <li>Épuisement respiratoire, détresse persistante.</li>
-                    <li>Altération de la conscience (GCS &lt; 8).</li>
+                    <li>Altération de la conscience (GCS inférieur à 8).</li>
                     <li>Arrêt respiratoire imminent.</li>
                 </ul>
             </div>
@@ -170,7 +170,7 @@ export const IraHypercapniqueSection: React.FC = () => {
              <ul className="list-disc list-inside space-y-2 mt-3 text-slate-700 text-base">
                 <li>Le patient présente des caractéristiques d'échec de la VNI.</li>
                 <li>Nécessité de sédation ou surveillance rapprochée.</li>
-                <li>Acidose sévère (pH &lt; 7.25).</li>
+                <li>Acidose sévère (pH inférieur à 7.25).</li>
                 <li>Instabilité hémodynamique.</li>
             </ul>
         </Accordion>

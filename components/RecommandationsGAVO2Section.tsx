@@ -82,7 +82,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
         { id: 'eff_obs', label: "Observance ≥ 5h d'affilée ?" },
         { id: 'eff_symp', label: "Amélioration des symptômes ?" },
         { id: 'eff_hypo', label: "Correction de l'hypoventilation ?" },
-        { id: 'eff_event', label: "Événements nocturnes (IAH &lt; 10/h) ?" }
+        { id: 'eff_event', label: "Événements nocturnes (IAH inférieur à 10/h) ?" }
     ];
 
     const toleranceItems = [
@@ -199,7 +199,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                         {param: 'PEP (cmH₂O)', value: '4 → 4-6*'},
                         {param: 'FR (/min)', value: '12 → 14-20**'},
                         {param: 'Cyclage', value: 'Précoce'},
-                        {param: 'Ti', value: '&lt; 1.5s'},
+                        {param: 'Ti', value: 'inférieur à 1.5s'},
                     ]}/>
                      <SettingsCard pathology="SOH" color="cyan" settings={[
                         {param: 'AI (cmH₂O)', value: '14 → 16-20'},
@@ -304,21 +304,21 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                         <MarkerCard title="Gaz du Sang (Diurne)" icon={<Activity className="w-5 h-5 text-blue-500" />}>
                             <p>L'objectif est la disparition de l'hypercapnie diurne.</p>
                             <ul className="list-disc list-inside mt-1">
-                                <li><b>Cible standard :</b> PaCO₂ &lt; 45 mmHg.</li>
-                                <li><b>Spécificité BPCO :</b> PaCO₂ &lt; 48 mmHg ou une réduction d'au moins 20% par rapport à la valeur initiale.</li>
+                                <li><b>Cible standard :</b> PaCO₂ inférieur à 45 mmHg.</li>
+                                <li><b>Spécificité BPCO :</b> PaCO₂ inférieur à 48 mmHg ou une réduction d'au moins 20% par rapport à la valeur initiale.</li>
                             </ul>
                         </MarkerCard>
                         <MarkerCard title="PtcCO₂ Nocturne" icon={<Calculator className="w-5 h-5 text-purple-500" />}>
                             <p>Permet de suivre efficacement l'hypoventilation nocturne. Sa persistance est un facteur de mauvais pronostic.</p>
-                             <p className="mt-1"><b>Exemple de cible :</b> PtcCO₂ &gt; 49 mmHg pendant &lt; 10% du temps, et Pic PtcCO₂ &lt; 55 mmHg.</p>
+                             <p className="mt-1"><b>Exemple de cible :</b> PtcCO₂ &gt; 49 mmHg pendant inférieur à 10% du temps, et Pic PtcCO₂ inférieur à 55 mmHg.</p>
                         </MarkerCard>
                         <MarkerCard title="Oxymétrie Nocturne" icon={<Heart className="w-5 h-5 text-red-500" />}>
                             <p>Signal indirect et non spécifique. Une désaturation peut être liée à des fuites, des événements obstructifs ou une hypoventilation résiduelle.</p>
-                             <p className="mt-1"><b>Critères à surveiller :</b> Temps passé avec SpO₂ &lt; 90% (cible &lt; 5% de la nuit), SpO₂ moyenne, nombre de désaturations.</p>
+                             <p className="mt-1"><b>Critères à surveiller :</b> Temps passé avec SpO₂ inférieur à 90% (cible inférieur à 5% de la nuit), SpO₂ moyenne, nombre de désaturations.</p>
                         </MarkerCard>
                          <MarkerCard title="Index d'Apnées/Hypopnées (IAH)" icon={<Wind className="w-5 h-5 text-teal-500" />}>
                             <p>Cible un index d'événements obstructifs (IEO) résiduel pour s'assurer du contrôle des événements respiratoires nocturnes.</p>
-                            <p className="mt-1"><b>Cible :</b> IAH &lt; 10/h.</p>
+                            <p className="mt-1"><b>Cible :</b> IAH inférieur à 10/h.</p>
                         </MarkerCard>
                     </div>
                 </div>
@@ -357,8 +357,8 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                     <AdviceCard title="Qui est éligible ?" icon={<Users className="w-6 h-6" />} color="green">
                         <ul className="list-disc list-inside space-y-1 text-sm">
                             <li>Patients <strong>stables</strong> (BPCO, SOH, neuromusculaires, restrictifs).</li>
-                            <li><strong>Pas d'insuffisance cardiaque sévère</strong> (FEVG &lt; 45%) ou d'arythmie non contrôlée.</li>
-                            <li>Utilisation de la VNI <strong>&lt; 12h/j</strong>, sans dépendance prévisible d'emblée.</li>
+                            <li><strong>Pas d'insuffisance cardiaque sévère</strong> (FEVG inférieur à 45%) ou d'arythmie non contrôlée.</li>
+                            <li>Utilisation de la VNI <strong>inférieur à 12h/j</strong>, sans dépendance prévisible d'emblée.</li>
                             <li><strong>Autonomie suffisante</strong> ou présence d'un <strong>aidant motivé et disponible</strong>.</li>
                             <li>Absence de troubles cognitifs majeurs (ou présence d'un aidant).</li>
                         </ul>

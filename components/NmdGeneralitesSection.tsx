@@ -111,7 +111,7 @@ export const NmdGeneralitesSection: React.FC = () => (
                 <InfoCard title="1. Fonction Ventilatoire" icon={<Lungs className="w-5 h-5"/>} variant="blue">
                     <p className="font-semibold">Dépend des muscles inspiratoires.</p>
                     <ul className="list-disc list-inside mt-2">
-                        <li><strong>CVF (Capacité Vitale Forcée) :</strong> La mesure de base pour le suivi. Une chute de &gt;20% en position couchée signe une faiblesse diaphragmatique.</li>
+                        <li><strong>CVF (Capacité Vitale Forcée) :</strong> La mesure de base pour le suivi. Une chute de supérieur à 20% en position couchée signe une faiblesse diaphragmatique.</li>
                         <li><strong>PIM (Pression Inspiratoire Maximale) :</strong> Évalue la force des muscles inspiratoires.</li>
                     </ul>
                 </InfoCard>

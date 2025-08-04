@@ -99,7 +99,7 @@ export const BpcoLongCours: React.FC = () => {
                      <InfoCard title="Objectifs de la Haute Intensité" icon={<Target className="w-5 h-5"/>} variant="green">
                          <ul className="list-disc list-inside">
                              <li><strong>Normaliser ou réduire significativement la PaCO₂.</strong></li>
-                             <li>Viser une réduction d'au moins 20% ou une PaCO₂ &lt; 48 mmHg.</li>
+                             <li>Viser une réduction d'au moins 20% ou une PaCO₂ inférieur à 48 mmHg.</li>
                              <li>Mettre au repos les muscles respiratoires pendant la nuit.</li>
                          </ul>
                     </InfoCard>
