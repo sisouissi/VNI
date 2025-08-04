@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BrainCircuit, Activity, ListChecks, Target, CheckCircle, Wind, Wrench, AlertTriangle, Home, User, SlidersHorizontal, Users } from './icons';
 import { Accordion } from './Accordion';

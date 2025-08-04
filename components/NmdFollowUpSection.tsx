@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Activity, Users, CheckCircle, AlertTriangle, TrendingUp, TrendingDown, ShieldX, Wind, Wrench, Heart, User } from './icons';
 import { Accordion } from './Accordion';

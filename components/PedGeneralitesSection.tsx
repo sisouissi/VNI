@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { ListChecks, AlertTriangle, CheckCircle, XCircle, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -35,72 +33,55 @@ const InfoCard: React.FC<{ title: string; children: React.ReactNode; icon: React
 };
 
 export const PedGeneralitesSection: React.FC = () => {
-  return (
-    <div className="space-y-6 pt-8">
-      <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
-        <h3 className="text-2xl font-bold text-slate-900">Introduction et Principes Fondamentaux</h3>
-        <p className="mt-2 text-slate-600 text-base">
-            La VNI en pédiatrie est en pleine expansion, mais manque de critères validés. L'approche doit être multidisciplinaire et centrée sur la qualité de vie.
-        </p>
-    </div>
-    
-    <KeyPointsCard>
-        <li><strong>En aigu :</strong> La VNI est utilisée pour l'insuffisance respiratoire aiguë afin d'éviter l'intubation. Les indications principales incluent la bronchiolite, l'asthme, la pneumonie et le SDRA.</li>
-        <li><strong>En chronique (long cours) :</strong> La VNI est indiquée en cas d'hypoventilation alvéolaire nocturne. Les indications principales sont les maladies neuromusculaires, les déformations thoraciques sévères et les SAOS complexes.</li>
-        <li><strong>CPAP vs VNI :</strong> La CPAP vise à maintenir les voies aériennes ouvertes (SAOS). La VNI (Bi-level) assiste activement la respiration (hypoventilation).</li>
-        <li><strong>Sécurité avant tout :</strong> La sélection du patient et de l'interface est cruciale. Une surveillance étroite est nécessaire pour prévenir les complications et reconnaître les signes d'échec.</li>
-    </KeyPointsCard>
-    
-    <Accordion title="Indications pour la CPAP" icon={<CheckCircle className="w-6 h-6"/>} variant="primary">
-        <p className="text-slate-700 mb-4 text-base">La CPAP est principalement indiquée pour les obstructions des voies aériennes supérieures.</p>
-        <InfoCard title="Indications Clés de la CPAP" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
-            <ul className="list-disc list-inside space-y-1">
-                <li><strong>SAOS "Complexe" sévère et persistant :</strong> Après échec de l'adéno-amygdalectomie, ou en cas de malformations craniofaciales, obésité morbide, ou maladies osseuses (achondroplasie).</li>
-                <li><strong>PEEP intrinsèque élevée :</strong> Comme observée chez les nourrissons avec dysplasie bronchopulmonaire (DBP).</li>
-            </ul>
-        </InfoCard>
-    </Accordion>
-
-    <Accordion title="Indications pour la VNI (Bi-level)" icon={<CheckCircle className="w-6 h-6"/>} variant="primary">
-        <p className="text-slate-700 mb-4 text-base">La VNI est indiquée pour l'hypoventilation alvéolaire nocturne.</p>
-        <div className="grid md:grid-cols-2 gap-4">
-            <InfoCard title="Maladies Neuromusculaires (MNM)" icon={<Wrench className="w-5 h-5"/>} variant="blue">
-                <p>C'est l'indication la plus fréquente. Exemples : Amyotrophie Spinale (SMA), Dystrophie Musculaire de Duchenne (DMD).</p>
-            </InfoCard>
-            <InfoCard title="Autres Indications" icon={<Wrench className="w-5 h-5"/>} variant="blue">
-                <ul className="list-disc list-inside space-y-1">
-                    <li>Déformations thoraciques sévères.</li>
-                    <li>Maladies de surcharge (mucopolysaccharidose).</li>
-                    <li>Syndromes avec hypoventilation centrale (Prader-Willi, ROHHAD).</li>
-                    <li>Mucoviscidose.</li>
-                    <li>Échec ou intolérance à la CPAP dans le SAOS.</li>
-                </ul>
-            </InfoCard>
+    return (
+        <div className="space-y-6 pt-8">
+            <p className="text-slate-700 text-base">
+                L'utilisation de la VNI au long cours chez l'enfant est en constante augmentation. Elle a révolutionné la prise en charge de nombreuses pathologies respiratoires chroniques, améliorant la qualité de vie et le pronostic.
+            </p>
+            
+            <KeyPointsCard>
+                <li>Les indications principales sont l'obstruction des voies aériennes supérieures (ex: SAOS) et l'hypoventilation alvéolaire (ex: maladies neuromusculaires).</li>
+                <li>Le but est de restaurer des échanges gazeux normaux pendant le sommeil pour permettre une croissance et un développement neurocognitif optimaux.</li>
+                <li>Les défis sont nombreux : choix du matériel adapté à la morphologie de l'enfant, coopération, gestion de la croissance et surveillance à long terme.</li>
+                <li>L'initiation de la VNI est une décision multidisciplinaire impliquant pneumo-pédiatres, techniciens, psychologues et la famille.</li>
+            </KeyPointsCard>
+            
+            <Accordion title="Indications Principales (Long Cours)" icon={<CheckCircle className="w-6 h-6"/>} variant="primary">
+                <p className="text-slate-700 mb-4 text-base">Les indications peuvent être classées en deux grandes catégories, basées sur les recommandations de l'ERS (Fauroux et al., 2022).</p>
+                <div className="grid md:grid-cols-2 gap-6">
+                    <InfoCard title="Obstruction des Voies Aériennes Supérieures" icon={<Wrench className="w-5 h-5"/>} variant="blue">
+                        <p className="font-semibold">C'est l'indication la plus fréquente.</p>
+                        <ul className="list-disc list-inside mt-2 space-y-1">
+                            <li><strong>SAOS persistant :</strong> Après échec du traitement de première ligne (ex: adéno-amygdalectomie).</li>
+                            <li><strong>Malformations craniofaciales :</strong> (ex: Syndrome de Pierre Robin, achondroplasie).</li>
+                            <li><strong>Obésité.</strong></li>
+                            <li><strong>Laryngo/trachéomalacie.</strong></li>
+                        </ul>
+                    </InfoCard>
+                    <InfoCard title="Hypoventilation Alvéolaire" icon={<Wrench className="w-5 h-5"/>} variant="green">
+                        <p className="font-semibold">Toute pathologie entraînant une faiblesse des muscles respiratoires ou un défaut de commande.</p>
+                        <ul className="list-disc list-inside mt-2 space-y-1">
+                            <li><strong>Maladies neuromusculaires :</strong> Dystrophie de Duchenne, amyotrophie spinale.</li>
+                            <li><strong>Pathologies de la paroi thoracique :</strong> Cyphoscoliose sévère.</li>
+                            <li><strong>Anomalies de la commande centrale :</strong> Syndrome d'Ondine.</li>
+                            <li><strong>Maladies pulmonaires chroniques :</strong> Mucoviscidose (en attente de greffe), dysplasie bronchopulmonaire.</li>
+                        </ul>
+                    </InfoCard>
+                </div>
+            </Accordion>
+            
+            <Accordion title="Contre-indications" icon={<XCircle className="w-6 h-6"/>} variant="danger">
+                 <p className="text-slate-700 mb-4 text-base">Les contre-indications sont similaires à celles de l'adulte mais avec une attention particulière à l'anatomie et à la coopération de l'enfant.</p>
+                 <InfoCard title="Contre-indications Relatives ou Absolues" icon={<AlertTriangle className="w-5 h-5"/>} variant="red">
+                    <ul className="list-disc list-inside space-y-2">
+                        <li>Incapacité à protéger les voies aériennes (troubles de déglutition sévères non gérés).</li>
+                        <li>Instabilité hémodynamique non contrôlée.</li>
+                        <li>Obstruction fixe et sévère des voies aériennes supérieures.</li>
+                        <li>Traumatisme facial majeur ou chirurgie récente.</li>
+                        <li>Refus de coopération de l'enfant (après tentative de désensibilisation) ou de la famille.</li>
+                    </ul>
+                </InfoCard>
+            </Accordion>
         </div>
-    </Accordion>
-    
-    <Accordion title="Contre-indications & Critères d'Inéligibilité" icon={<XCircle className="w-6 h-6"/>} variant="danger">
-        <p className="text-slate-700 mb-4 text-base">La décision d'initier une VNI doit prendre en compte les situations où elle pourrait être inefficace ou dangereuse.</p>
-        <div className="grid md:grid-cols-2 gap-6">
-            <InfoCard title="Contre-indications Absolues (en aigu)" icon={<XCircle className="w-5 h-5"/>} variant="red">
-                <ul className="list-disc list-inside space-y-1">
-                    <li>Arrêt cardio-respiratoire.</li>
-                    <li>Instabilité hémodynamique sévère.</li>
-                    <li>Altération profonde de la conscience (GCS inférieur à 8).</li>
-                    <li>Risque d'inhalation élevé (vomissements, absence de réflexes de protection).</li>
-                    <li>Traumatisme facial majeur.</li>
-                </ul>
-            </InfoCard>
-            <InfoCard title="Critères d'Inéligibilité (en chronique)" icon={<AlertTriangle className="w-5 h-5"/>} variant="amber">
-                <ul className="list-disc list-inside space-y-1">
-                    <li>Incapacité à protéger les voies aériennes (atteinte bulbaire sévère).</li>
-                    <li>Sécrétions abondantes et incontrôlables.</li>
-                    <li>Manque de coopération du patient ou de la famille.</li>
-                    <li>Anomalies faciales incompatibles avec une interface.</li>
-                </ul>
-            </InfoCard>
-        </div>
-    </Accordion>
-    </div>
-  );
+    );
 };

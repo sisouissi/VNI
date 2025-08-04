@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SlidersHorizontal, ListChecks, User, Wind, Activity, CheckCircle, AlertTriangle, Home } from './icons';
 import { Accordion } from './Accordion';

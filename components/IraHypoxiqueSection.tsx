@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Lungs, BrainCircuit, ShieldX, User, TrendingUp, AlertTriangle, CheckCircle, Target, XCircle, ListChecks, Activity, Wind, TrendingDown } from './icons';
 import { Accordion } from './Accordion';
@@ -148,7 +147,7 @@ export const IraHypoxiqueSection: React.FC = () => {
             <p className="mb-4 text-slate-700 text-base">L'approche classique de "protection" pulmonaire en VNI (faible aide inspiratoire pour limiter le Vt) est remise en cause dans l'IRA-H, car elle peut être délétère.</p>
             <div className="grid md:grid-cols-2 gap-6">
                 <StrategyComparisonCard title="Stratégie à Éviter : Faible Aide Inspiratoire" icon={<XCircle className="w-6 h-6"/>} variant="bad">
-                    <p>Appliquer une faible AI (≤ 5 cmH₂O) pour cibler un "petit" Vt est souvent contre-productif.</p>
+                    <p>Appliquer une faible Aide Inspiratoire (inférieur ou égal à 5 cmH₂O) pour cibler un "petit" Vt est souvent contre-productif.</p>
                     <p className="mt-2">Le patient, avec son drive élevé, compense en augmentant son propre effort, ce qui maintient un Vt élevé et de fortes pressions transpulmonaires, aggravant le P-SILI.</p>
                 </StrategyComparisonCard>
                 <StrategyComparisonCard title="Stratégie à Privilégier : Un Soutien Actif" icon={<CheckCircle className="w-6 h-6"/>} variant="good">

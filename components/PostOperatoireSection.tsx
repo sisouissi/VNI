@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FileMedical, ListChecks, Wind, AlertTriangle, Lungs, CheckCircle } from './icons';
 import { Accordion } from './Accordion';
@@ -139,7 +140,7 @@ export const PostOperatoireSection: React.FC = () => (
                         <li><strong>Mode :</strong> CPAP ou VNI (Bi-level). La CPAP est souvent suffisante.</li>
                         <li><strong>EPAP / PEEP :</strong> <strong>5 à 10 cmH₂O</strong>. C'est le paramètre le plus important.</li>
                         <li><strong>Aide Inspiratoire (si VNI) :</strong> <strong>5 à 10 cmH₂O</strong> pour soulager le travail respiratoire.</li>
-                        <li><strong>FiO₂ :</strong> Pour SpO₂ > 92%.</li>
+                        <li><strong>FiO₂ :</strong> Pour SpO₂ supérieur à 92%.</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Précautions" icon={<AlertTriangle className="w-5 h-5"/>} variant="amber">

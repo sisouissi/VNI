@@ -1,6 +1,5 @@
 
 
-
 import React from 'react';
 import { Moon, ListChecks, Target, AlertTriangle, Wind, SlidersHorizontal, CheckCircle, Lungs, User } from './icons';
 import { Accordion } from './Accordion';

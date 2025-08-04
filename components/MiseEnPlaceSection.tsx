@@ -107,7 +107,7 @@ export const MiseEnPlaceSection: React.FC = () => (
                     <ul className="space-y-1 text-slate-700 text-sm">
                         <li><strong>CPAP Cible :</strong> 8-12 cmH₂O.</li>
                         <li><strong>Si VNI :</strong> AI 5-10 cmH₂O.</li>
-                        <li><strong>FiO₂ :</strong> Pour SpO₂ &gt; 92%.</li>
+                        <li><strong>FiO₂ :</strong> Pour SpO₂ supérieur à 92%.</li>
                     </ul>
                 </div>
                 <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
@@ -115,7 +115,7 @@ export const MiseEnPlaceSection: React.FC = () => (
                     <ul className="space-y-1 text-slate-700 text-sm">
                         <li><strong>AI Cible :</strong> 10-15 cmH₂O.</li>
                         <li><strong>PEP Cible :</strong> 8-12 cmH₂O.</li>
-                        <li><strong>FiO₂ :</strong> Pour SpO₂ &gt; 92%.</li>
+                        <li><strong>FiO₂ :</strong> Pour SpO₂ supérieur à 92%.</li>
                     </ul>
                 </div>
             </div>

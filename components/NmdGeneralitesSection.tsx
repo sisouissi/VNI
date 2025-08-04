@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BookOpen, Activity, Lungs, BrainCircuit, ListChecks, Wrench } from './icons';
 import { Accordion } from './Accordion';

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { AlertTriangle, CheckCircle, FlaskConical, Heart, ListChecks, Moon, RefreshCw, Siren, User, Wind } from './icons';
 

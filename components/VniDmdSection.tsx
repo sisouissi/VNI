@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Shield, Activity, Heart, AlertTriangle, Users, BookOpen, Wind, Wrench } from './icons';
 import { Accordion } from './Accordion';

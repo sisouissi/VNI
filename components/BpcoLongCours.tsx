@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { Target, TrendingUp, User, Heart, AlertTriangle, Home, UserCheck, SlidersHorizontal, Wind, XCircle, Wrench, ListChecks, BookOpen, TrendingDown } from './icons';
 import { Accordion } from './Accordion';

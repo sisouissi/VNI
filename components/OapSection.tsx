@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Heart, ListChecks, Wind, CheckCircle, SlidersHorizontal, AlertTriangle, Lungs, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -136,14 +137,14 @@ export const OapSection: React.FC = () => (
                         <li><strong>Pression initiale :</strong> 5 à 7 cmH₂O.</li>
                         <li><strong>Titration :</strong> Augmenter par paliers de 2 cmH₂O toutes les 5-10 minutes.</li>
                         <li><strong>Pression cible :</strong> <strong>8 à 12 cmH₂O</strong>.</li>
-                        <li><strong>FiO₂ :</strong> Ajuster pour une SpO₂ > 92%.</li>
+                        <li><strong>FiO₂ :</strong> Ajuster pour une SpO₂ supérieur à 92%.</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Réglages VNI (Bi-level)" icon={<Wind className="w-5 h-5"/>} variant="blue">
                     <ul className="list-disc list-inside">
                          <li><strong>EPAP (PEP) :</strong> <strong>8 à 12 cmH₂O</strong> (similaire à la CPAP).</li>
                          <li><strong>IPAP :</strong> Ajouter une aide inspiratoire faible (<strong>AI de 4 à 8 cmH₂O</strong>). IPAP = EPAP + AI.</li>
-                         <li><strong>FiO₂ :</strong> Ajuster pour une SpO₂ > 92%.</li>
+                         <li><strong>FiO₂ :</strong> Ajuster pour une SpO₂ supérieur à 92%.</li>
                     </ul>
                 </InfoCard>
              </div>

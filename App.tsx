@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { ContentArea } from './components/ContentArea';
@@ -55,7 +56,7 @@ const getRealDate = async (): Promise<Date> => {
       return new Date(data.datetime);
     }
   } catch (error) {
-    console.warn('API de date indisponible, utilisation de la date système');
+    // API de date indisponible, utilisation silencieuse de la date système
   }
   return new Date();
 };

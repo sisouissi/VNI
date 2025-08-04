@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import { Target, AlertTriangle, Wind, CheckCircle, SlidersHorizontal, Activity, Siren, User, XCircle } from './icons';
 import { Accordion } from './Accordion';
@@ -55,7 +52,7 @@ export const SohPriseEnCharge: React.FC = () => {
                     <ul className="list-disc list-inside space-y-2">
                         <li><strong>Réglages initiaux :</strong> Similaires à ceux d'un SAOS sans SOH, avec titration en laboratoire. <strong>L'Auto-CPAP ne doit pas être utilisée</strong> car son efficacité est limitée sur l'hypercapnie.</li>
                         <li><strong>Efficacité :</strong> La CPAP améliore la PaCO₂ et la qualité de vie, mais la normalisation n'est pas universelle et des désaturations nocturnes peuvent persister.</li>
-                        <li><strong>Objectifs thérapeutiques :</strong> Normalisation de la PaCO₂ (inférieur à45 mmHg), élimination des désaturations, soulagement des symptômes (hypersomnolence).</li>
+                        <li><strong>Objectifs thérapeutiques :</strong> Normalisation de la PaCO₂ (inférieur à 45 mmHg), élimination des désaturations, soulagement des symptômes (hypersomnolence).</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Évaluation de la Réponse et Seconde Ligne" icon={<SlidersHorizontal className="w-5 h-5"/>} variant="amber">
@@ -65,7 +62,7 @@ export const SohPriseEnCharge: React.FC = () => {
                         <li><strong>Passage en seconde ligne (Bi-level PAP) si :</strong>
                             <ul className="list-['-_'] list-inside pl-4 mt-1 font-semibold">
                                 <li>Échec de normalisation de la PaCO₂ diurne malgré une bonne adhérence.</li>
-                                <li>Désaturations nocturnes résiduelles importantes (&gt; plusieurs minutes à &lt;88%).</li>
+                                <li>Désaturations nocturnes résiduelles importantes (supérieur à plusieurs minutes à inférieur à 88%).</li>
                                 <li>Intolérance à la CPAP.</li>
                             </ul>
                         </li>

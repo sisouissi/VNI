@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { User, Wrench, CheckCircle, AlertTriangle, Home } from './icons';
 import { Accordion } from './Accordion';

@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import { Siren, Target, CheckCircle, XCircle, User, Wrench, Heart, Activity, AlertTriangle, Shield, Users, ListChecks, Wind, Lungs } from './icons';
 import { Accordion } from './Accordion';

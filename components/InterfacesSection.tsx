@@ -151,7 +151,7 @@ export const InterfacesSection: React.FC = () => {
                     </div>
                     <div className="border-t pt-4">
                         <h4 className="font-semibold text-lg text-slate-800">3. Minimiser l'Espace Mort</h4>
-                        <p className="text-sm text-slate-600 mt-1">Impact : Réinhalation de CO₂, surtout avec les masques faciaux totaux et les casques. Solutions : Assurer une PEP suffisante (≥ 4-5 cmH₂O) pour "laver" le CO₂ du circuit, utiliser des ventilateurs avec un débit continu si nécessaire.</p>
+                        <p className="text-sm text-slate-600 mt-1">Impact : Réinhalation de CO₂, surtout avec les masques faciaux totaux et les casques. Solutions : Assurer une PEP suffisante (supérieur ou égal à 4-5 cmH₂O) pour "laver" le CO₂ du circuit, utiliser des ventilateurs avec un débit continu si nécessaire.</p>
                     </div>
                 </div>
             </Accordion>

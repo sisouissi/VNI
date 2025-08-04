@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Target, Home, CheckCircle, SlidersHorizontal, Users, Activity, AlertTriangle, Wind } from './icons';
 import { Accordion } from './Accordion';
@@ -51,8 +50,8 @@ export const PedMiseEnPlaceSection: React.FC = () => {
             </p>
             <InfoCard title="Critères Objectifs (ERS)" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
                 <ul className="list-disc list-inside space-y-1">
-                    <li><strong>Hypercapnie nocturne :</strong> C'est le critère principal pour la VNI. Définie par une PtcCO₂ &gt; 50 mmHg pendant ≥2% du temps de sommeil ou pendant plus de 5 minutes consécutives.</li>
-                    <li><strong>SAOS sévère persistant :</strong> Indication principale pour la CPAP. Défini par un IAH obstructif &gt; 5 ou &gt; 10/h avec des anomalies des échanges gazeux nocturnes.</li>
+                    <li><strong>Hypercapnie nocturne :</strong> C'est le critère principal pour la VNI. Définie par une PtcCO₂ supérieur à 50 mmHg pendant supérieur ou égal à 2% du temps de sommeil ou pendant plus de 5 minutes consécutives.</li>
+                    <li><strong>SAOS sévère persistant :</strong> Indication principale pour la CPAP. Défini par un IAH obstructif supérieur à 5 ou supérieur à 10/h avec des anomalies des échanges gazeux nocturnes.</li>
                     <li><strong>Autres critères associés :</strong> Symptômes cliniques, anomalies des gaz du sang diurnes, altération de la fonction pulmonaire (CVF basse), hypertension pulmonaire.</li>
                 </ul>
             </InfoCard>
