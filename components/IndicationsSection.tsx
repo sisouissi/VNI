@@ -1,9 +1,21 @@
 
 import React from 'react';
-import { ListChecks, CheckCircle, XCircle, AlertTriangle, Shield, Heart, Lungs, ShieldX, Users } from './icons';
+import { SectionId } from '../types';
+import { ListChecks, CheckCircle, XCircle, AlertTriangle, Shield, Heart, Lungs, ShieldX, Users, BookOpen, SlidersHorizontal, ChevronRight, Activity, Calculator, Wrench } from './icons';
 import { Accordion } from './Accordion';
 
-const Recommendation: React.FC<{ title: string, strength: string, details: string, icon: React.ReactNode, variant: 'strong' | 'conditional' | 'not-recommended' }> = ({ title, strength, details, icon, variant }) => {
+interface IndicationsSectionProps {
+  setActiveSection: (section: SectionId) => void;
+}
+
+const LinkButton: React.FC<{ onClick: () => void; children: React.ReactNode; icon: React.ReactNode }> = ({ onClick, children, icon }) => (
+    <button onClick={onClick} className="inline-flex items-center space-x-1.5 text-sm text-indigo-600 hover:text-indigo-800 hover:underline font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-300 rounded">
+        {icon}
+        <span>{children}</span>
+    </button>
+);
+
+const Recommendation: React.FC<{ title: string, strength: string, details: string, icon: React.ReactNode, variant: 'strong' | 'conditional' | 'not-recommended', links?: React.ReactNode }> = ({ title, strength, details, icon, variant, links }) => {
     const colors = {
         strong: 'border-green-500 bg-green-50',
         conditional: 'border-blue-500 bg-blue-50',
@@ -19,10 +31,11 @@ const Recommendation: React.FC<{ title: string, strength: string, details: strin
         <div className={`p-4 rounded-lg border-l-4 ${colors[variant]}`}>
             <div className="flex items-start">
                 <div className="flex-shrink-0">{icon}</div>
-                <div className="ml-4">
+                <div className="ml-4 w-full">
                     <h4 className="text-lg font-semibold text-slate-800">{title}</h4>
                     <span className={`inline-block px-2 py-0.5 text-xs font-semibold rounded-full mt-1 mb-2 ${strengthColors[variant]}`}>{strength}</span>
                     <p className="text-slate-700 text-base" dangerouslySetInnerHTML={{ __html: details }}></p>
+                    {links && <div className="mt-3 pt-3 border-t border-slate-200 flex flex-wrap gap-x-4 gap-y-2">{links}</div>}
                 </div>
             </div>
         </div>
@@ -48,7 +61,7 @@ const ContraindicationList: React.FC<{ title: string, items: string[], icon: Rea
     );
 };
 
-export const IndicationsSection: React.FC = () => (
+export const IndicationsSection: React.FC<IndicationsSectionProps> = ({ setActiveSection }) => (
   <div className="space-y-8 animate-fade-in">
     <div className="bg-white p-6 rounded-lg shadow-sm border border-slate-200">
       <h2 className="text-3xl font-bold text-slate-900 flex items-center">
@@ -60,6 +73,29 @@ export const IndicationsSection: React.FC = () => (
       </p>
     </div>
 
+    <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg flex items-center space-x-4">
+            <Activity className="w-10 h-10 text-blue-500 flex-shrink-0"/>
+            <div>
+                <h3 className="font-bold text-blue-800">Prêt à commencer ?</h3>
+                <p className="text-sm text-slate-600 mt-1 mb-2">Consultez notre guide étape par étape pour une initiation réussie.</p>
+                <LinkButton onClick={() => setActiveSection('mise-en-place')} icon={<ChevronRight className="w-4 h-4"/>}>
+                    Aller au guide de Mise en Place
+                </LinkButton>
+            </div>
+        </div>
+        <div className="bg-purple-50 border border-purple-200 p-4 rounded-lg flex items-center space-x-4">
+            <Calculator className="w-10 h-10 text-purple-500 flex-shrink-0"/>
+            <div>
+                <h3 className="font-bold text-purple-800">Évaluer le risque d'échec ?</h3>
+                <p className="text-sm text-slate-600 mt-1 mb-2">Utilisez nos calculateurs pour estimer le pronostic de la VNI.</p>
+                <LinkButton onClick={() => setActiveSection('sevrage')} icon={<ChevronRight className="w-4 h-4"/>}>
+                    Calculer le score HACOR & l'index ROX
+                </LinkButton>
+            </div>
+        </div>
+    </div>
+
     <Accordion title="Indications Fortement Recommandées" icon={<CheckCircle className="w-6 h-6"/>} variant="success">
         <div className="space-y-4">
             <Recommendation
@@ -68,6 +104,12 @@ export const IndicationsSection: React.FC = () => (
                 details="La VNI Bi-niveau est le traitement de choix pour l'insuffisance respiratoire aiguë (IRA) hypercapnique (<strong>pH inférieur à 7.35</strong>) sur BPCO. Elle réduit le besoin d'intubation et la mortalité. La recommandation est encore plus forte pour les pH entre 7.25 et 7.35."
                 icon={<Lungs className="w-8 h-8 text-green-600"/>}
                 variant="strong"
+                links={
+                    <>
+                        <LinkButton onClick={() => setActiveSection('vni-bpco')} icon={<BookOpen className="w-4 h-4"/>}>En savoir plus sur la BPCO</LinkButton>
+                        <LinkButton onClick={() => setActiveSection('recommandations-gavo2')} icon={<SlidersHorizontal className="w-4 h-4"/>}>Voir réglages GAVO2</LinkButton>
+                    </>
+                }
             />
             <Recommendation
                 title="Œdème Aigu du Poumon Cardiogénique"
@@ -75,6 +117,20 @@ export const IndicationsSection: React.FC = () => (
                 details="La CPAP ou la VNI Bi-niveau sont fortement recommandées. Ces modes améliorent la dyspnée et les paramètres physiologiques en diminuant la pré-charge et la post-charge VG."
                 icon={<Heart className="w-8 h-8 text-green-600"/>}
                 variant="strong"
+                 links={<LinkButton onClick={() => setActiveSection('oap')} icon={<BookOpen className="w-4 h-4"/>}>En savoir plus sur l'OAP</LinkButton>}
+            />
+             <Recommendation
+                title="Syndrome Obésité-Hypoventilation (SOH) en décompensation aiguë"
+                strength="Recommandation Forte - Haute certitude"
+                details="Pour les patients présentant une insuffisance respiratoire aiguë hypercapnique dans un contexte de SOH, la VNI Bi-niveau est le traitement de première intention. Elle améliore rapidement les échanges gazeux, réduit le travail respiratoire et, initiée lors de l'hospitalisation, <strong>diminue drastiquement la mortalité et les réadmissions</strong>."
+                icon={<Lungs className="w-8 h-8 text-green-600"/>}
+                variant="strong"
+                links={
+                    <>
+                        <LinkButton onClick={() => setActiveSection('vni-tos')} icon={<BookOpen className="w-4 h-4"/>}>En savoir plus sur le SOH</LinkButton>
+                        <LinkButton onClick={() => setActiveSection('recommandations-gavo2')} icon={<SlidersHorizontal className="w-4 h-4"/>}>Voir réglages GAVO2</LinkButton>
+                    </>
+                }
             />
         </div>
     </Accordion>
@@ -87,6 +143,7 @@ export const IndicationsSection: React.FC = () => (
                 details="La VNI est suggérée pour <strong>prévenir</strong> l'échec d'extubation chez les patients à haut risque (ex: supérieur à 65 ans, comorbidités cardiaques, hypercapnie, toux inefficace). Elle réduit l'incidence de l'IRA post-extubation et la mortalité en USI dans ce groupe."
                 icon={<Shield className="w-8 h-8 text-blue-600"/>}
                 variant="conditional"
+                links={<LinkButton onClick={() => setActiveSection('post-extubation')} icon={<BookOpen className="w-4 h-4"/>}>En savoir plus</LinkButton>}
             />
             <Recommendation
                 title="IRA Post-opératoire"
@@ -94,6 +151,7 @@ export const IndicationsSection: React.FC = () => (
                 details="La VNI peut être utilisée pour traiter l'IRA hypoxémique après une chirurgie thoracique ou abdominale pour réduire le taux d'intubation et la mortalité hospitalière."
                 icon={<Shield className="w-8 h-8 text-blue-600"/>}
                 variant="conditional"
+                links={<LinkButton onClick={() => setActiveSection('post-operatoire')} icon={<BookOpen className="w-4 h-4"/>}>En savoir plus</LinkButton>}
             />
             <Recommendation
                 title="Patients Immunodéprimés"
@@ -169,9 +227,16 @@ export const IndicationsSection: React.FC = () => (
                     "Agitation ou anxiété extrêmes.",
                     "Patient non coopératif.",
                     "Sécrétions bronchiques abondantes et difficiles à gérer.",
-                    "Chirurgie œsophagienne ou gastrique récente."
+                    "Chirurgie œsophagienne ou gastrique recente."
                 ]}
             />
+        </div>
+        <div className="mt-6 p-4 bg-slate-50 border border-slate-200 rounded-lg">
+            <h4 className="font-semibold text-slate-800 mb-2">Besoin d'aide pour gérer une complication ?</h4>
+            <p className="text-sm text-slate-600 mb-3">Une contre-indication relative comme l'agitation ou l'encombrement peut souvent être gérée. Consultez notre guide de dépannage pour des stratégies pratiques.</p>
+            <LinkButton onClick={() => setActiveSection('complications')} icon={<Wrench className="w-4 h-4"/>}>
+                Voir la section Complications & Dépannage
+            </LinkButton>
         </div>
     </div>
   </div>

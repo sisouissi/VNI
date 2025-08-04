@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { SectionId } from '../types';
 import { Footer } from './Footer';
@@ -27,6 +28,7 @@ import { PostOperatoireSection } from './PostOperatoireSection';
 
 interface ContentAreaProps {
   activeSection: SectionId;
+  setActiveSection: (section: SectionId) => void;
 }
 
 const sectionComponents: Record<SectionId, React.FC<any>> = {
@@ -56,13 +58,13 @@ const sectionComponents: Record<SectionId, React.FC<any>> = {
   'post-operatoire': PostOperatoireSection
 };
 
-export const ContentArea: React.FC<ContentAreaProps> = ({ activeSection }) => {
+export const ContentArea: React.FC<ContentAreaProps> = ({ activeSection, setActiveSection }) => {
   const ComponentToRender = sectionComponents[activeSection] || WelcomeScreen;
 
   return (
     <div className="flex-1 overflow-auto bg-white rounded-2xl shadow-lg">
       <div className="p-10 max-w-7xl mx-auto">
-        <ComponentToRender />
+        {React.createElement(ComponentToRender as React.ComponentType<{ setActiveSection?: (section: SectionId) => void; }>, { setActiveSection })}
         <Footer />
       </div>
     </div>

@@ -362,7 +362,7 @@ const App: React.FC = () => {
           onOpenAbbreviations={() => setIsAbbreviationsModalOpen(true)}
           onOpenReferences={() => setIsReferencesModalOpen(true)}
         />
-        <ContentArea activeSection={activeSection} />
+        <ContentArea activeSection={activeSection} setActiveSection={setActiveSection} />
         
         {/* Bannière d'avertissement pour les derniers jours */}
         {!trialData?.hasAccessCode && daysRemaining <= 2 && daysRemaining > 0 && (
