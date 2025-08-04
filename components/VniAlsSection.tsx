@@ -77,7 +77,7 @@ export const VniAlsSection: React.FC = () => {
                         <li>CVF ≤ 80%</li>
                         <li>SNIP ≤ 40 cmH₂O</li>
                         <li>Désaturation nocturne</li>
-                        <li>PaCO₂ matinale > 6.5 kPa (49 mmHg)</li>
+                        <li>PaCO₂ matinale &gt; 6.5 kPa (49 mmHg)</li>
                     </ul>
                 </InfoCard>
             </div>

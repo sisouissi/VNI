@@ -41,7 +41,7 @@ const SettingsCard: React.FC<{pathology: string, settings: {param: string, value
                 {settings.map(s => (
                     <div key={s.param} className="flex justify-between items-center text-sm border-b pb-1">
                         <span className="font-semibold text-slate-600">{s.param}</span>
-                        <span className="font-bold text-slate-800 text-right">{s.value}</span>
+                        <span className="font-bold text-slate-800 text-right" dangerouslySetInnerHTML={{ __html: s.value }}></span>
                     </div>
                 ))}
             </div>
@@ -82,7 +82,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
         { id: 'eff_obs', label: "Observance ≥ 5h d'affilée ?" },
         { id: 'eff_symp', label: "Amélioration des symptômes ?" },
         { id: 'eff_hypo', label: "Correction de l'hypoventilation ?" },
-        { id: 'eff_event', label: "Événements nocturnes (IAH < 10/h) ?" }
+        { id: 'eff_event', label: "Événements nocturnes (IAH &lt; 10/h) ?" }
     ];
 
     const toleranceItems = [
@@ -113,8 +113,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                 ) : (
                     <div className="w-5 h-5 border-2 border-slate-400 rounded-md mr-2 flex-shrink-0 bg-white"></div>
                 )}
-                <span className={`transition-all ${isChecked ? 'line-through text-slate-500' : 'text-slate-800'}`}>
-                    {item.label}
+                <span className={`transition-all ${isChecked ? 'line-through text-slate-500' : 'text-slate-800'}`} dangerouslySetInnerHTML={{ __html: item.label }}>
                 </span>
             </button>
         </li>
@@ -265,7 +264,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                             <h4 className="font-bold text-lg text-blue-700 mb-3 text-center">Efficacité</h4>
                             <ul className="space-y-2">
                                 {efficaciteItems.map(item => (
-                                    <ChecklistItem key={item.id} item={{...item, label: item.label.replace('<', '&lt;')}} isChecked={!!checkedItems[item.id]} onToggle={handleToggle} colorClass="text-blue-500" />
+                                    <ChecklistItem key={item.id} item={item} isChecked={!!checkedItems[item.id]} onToggle={handleToggle} colorClass="text-blue-500" />
                                 ))}
                             </ul>
                         </div>

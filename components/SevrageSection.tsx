@@ -22,7 +22,7 @@ const PredictorCard: React.FC<{ title: string, value: string, success?: boolean,
     return (
         <div className={`p-3 rounded-lg border-l-4 ${colorClass}`}>
             <p className={`text-sm font-semibold ${textColor}`}>{title}</p>
-            <p className="text-lg font-bold text-slate-900">{value}</p>
+            <p className="text-lg font-bold text-slate-900" dangerouslySetInnerHTML={{ __html: value }}></p>
             {description && <p className="text-xs text-slate-600 mt-1">{description}</p>}
         </div>
     );
@@ -128,10 +128,10 @@ export const SevrageSection: React.FC = () => (
                 <div>
                     <h4 className="text-lg font-semibold text-green-800 mb-3">Signes de Succès du Sevrage</h4>
                     <div className="space-y-2">
-                        <PredictorCard title="Rapport PaO₂/FiO₂" value="> 200" description="1h après l'initiation de la VNI" />
+                        <PredictorCard title="Rapport PaO₂/FiO₂" value="&gt; 200" description="1h après l'initiation de la VNI" />
                         <PredictorCard title="Fréquence Respiratoire" value="&lt; 20-22 /min" description="Sans signe de détresse" />
-                        <PredictorCard title="pH" value="> 7.33" />
-                        <PredictorCard title="Score de Glasgow" value="> 13" />
+                        <PredictorCard title="pH" value="&gt; 7.33" />
+                        <PredictorCard title="Score de Glasgow" value="&gt; 13" />
                         <PredictorCard title="Index ROX" value="&gt; 4.88" description="Après 2h de VNI" />
                         <PredictorCard title="Score HACOR" value="&lt; 5" />
                     </div>
@@ -141,7 +141,7 @@ export const SevrageSection: React.FC = () => (
                      <div className="space-y-2">
                         <PredictorCard title="Rapport PaO₂/FiO₂" value="≤ 200" success={false} description="Baseline ou à 1h" />
                         <PredictorCard title="Fréquence Respiratoire" value="≥ 30 /min" success={false} />
-                        <PredictorCard title="Volume Courant (Vt)" value="> 9 ml/kg" success={false} />
+                        <PredictorCard title="Volume Courant (Vt)" value="&gt; 9 ml/kg" success={false} />
                         <PredictorCard title="Index ROX" value="&lt; 4.88" success={false} description="À 12h de VNI" />
                         <PredictorCard title="Score HACOR" value="&gt; 5" success={false} description="Dans la première heure" />
                         <PredictorCard title="Paramètres techniques" value="Mauvais ajustement du masque, fuites importantes, sécrétions excessives" success={false} />
@@ -162,8 +162,8 @@ export const SevrageSection: React.FC = () => (
                     <div className="p-4 bg-slate-700/50 border-l-4 border-blue-400 rounded-r-lg">
                         <h3 className="font-bold text-blue-300">1. Critères d'Éligibilité au Sevrage</h3>
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
-                        <li>PaO₂/FiO₂ > 200 mmHg avec FiO₂ &lt; 0.5</li>
-                        <li>pH > 7.35</li>
+                        <li>PaO₂/FiO₂ &gt; 200 mmHg avec FiO₂ &lt; 0.5</li>
+                        <li>pH &gt; 7.35</li>
                         <li>FR &lt; 25/min sans muscles accessoires</li>
                         <li>Stabilité hémodynamique</li>
                         </ul>
@@ -184,7 +184,7 @@ export const SevrageSection: React.FC = () => (
                         <p className="mt-1 text-sm font-semibold text-slate-200">SI le patient tolère le masque Venturi :</p>
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
                             <li>Sans détresse respiratoire</li>
-                            <li>SpO₂ > 88% maintenue</li>
+                            <li>SpO₂ &gt; 88% maintenue</li>
                             <li>Reste stable sur le plan hémodynamique et du pH</li>
                         </ul>
                         <div className="flex justify-center text-2xl font-bold text-green-400 mt-3">↓</div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Activity, Users, Wind, Heart, Target, ListChecks, AlertTriangle } from './icons';
 import { Accordion } from './Accordion';

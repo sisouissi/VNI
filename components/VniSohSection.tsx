@@ -88,7 +88,7 @@ export const VniSohSection: React.FC = () => {
                     Quand passer de la CPAP à la VNI ?
                 </h5>
                 <p className="text-sm text-amber-700 mt-2">
-                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong>.
+                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong> (&gt; plusieurs minutes à &lt;88%).
                 </p>
             </div>
         </Accordion>

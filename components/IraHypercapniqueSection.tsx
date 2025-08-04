@@ -142,7 +142,7 @@ export const IraHypercapniqueSection: React.FC = () => {
                 <InfoCard title="Signes d'Échec" icon={<XCircle className="w-5 h-5"/>} variant="red">
                      <ul className="list-disc list-inside">
                         <li>Pas d'amélioration ou aggravation des GDS.</li>
-                        <li>FR > 30/min persistante.</li>
+                        <li>FR &gt; 30/min persistante.</li>
                         <li>Agitation, épuisement.</li>
                         <li>Instabilité hémodynamique.</li>
                     </ul>
