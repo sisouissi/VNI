@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Target, TrendingUp, User, Heart, AlertTriangle, Home, UserCheck, SlidersHorizontal, Wind, XCircle, Wrench, ListChecks, BookOpen, TrendingDown } from './icons';
 import { Accordion } from './Accordion';
@@ -51,7 +52,7 @@ export const BpcoLongCours: React.FC = () => {
                         reference="Kaminska et al. 2021"
                         details={
                             <>
-                                <p>Chez les patients avec une BPCO stable et une insuffisance respiratoire hypercapnique chronique (<strong>PaCO₂ ≥ 52 mmHg</strong>), il est suggéré d'utiliser la VNI au long cours pour :</p>
+                                <p>Chez les patients avec une BPCO stable et une insuffisance respiratoire hypercapnique chronique (<strong>PaCO₂ supérieur ou égal à 52 mmHg</strong>), il est suggéré d'utiliser la VNI au long cours pour :</p>
                                 <p className="font-bold text-green-700 flex items-center"><Heart className="w-5 h-5 mr-2"/> AMÉLIORER LA SURVIE.</p>
                             </>
                         }
@@ -62,7 +63,7 @@ export const BpcoLongCours: React.FC = () => {
                         reference="Kaminska et al. 2021"
                         details={
                             <>
-                                <p>Chez les patients qui restent significativement hypercapniques (<strong>PaCO₂ ≥ 52 mmHg persistant</strong>) <strong>2 à 4 semaines après</strong> une exacerbation aiguë, il est suggéré d'utiliser la VNI au long cours pour :</p>
+                                <p>Chez les patients qui restent significativement hypercapniques (<strong>PaCO₂ supérieur ou égal à 52 mmHg persistant</strong>) <strong>2 à 4 semaines après</strong> une exacerbation aiguë, il est suggéré d'utiliser la VNI au long cours pour :</p>
                                 <p className="font-bold text-blue-700 flex items-center"><TrendingDown className="w-5 h-5 mr-2"/> RÉDUIRE LES RÉADMISSIONS HOSPITALIÈRES.</p>
                             </>
                         }
@@ -77,7 +78,7 @@ export const BpcoLongCours: React.FC = () => {
                         <li>
                             <strong>Critère principal :</strong> Patient BPCO stable avec <strong>hypercapnie diurne chronique et persistante</strong>, définie par :
                             <ul className="list-['-_'] list-inside pl-4 mt-1 font-semibold">
-                                <li>PaCO₂ ≥ 52 mmHg (7.0 kPa)</li>
+                                <li>PaCO₂ supérieur ou égal à 52 mmHg (7.0 kPa)</li>
                             </ul>
                         </li>
                         <li>
@@ -105,7 +106,7 @@ export const BpcoLongCours: React.FC = () => {
                     </InfoCard>
                      <InfoCard title="Réglages Typiques" icon={<Wind className="w-5 h-5"/>} variant="amber">
                          <ul className="list-disc list-inside">
-                             <li><strong>IPAP élevée :</strong> Souvent &gt; 20-25 cmH₂O.</li>
+                             <li><strong>IPAP élevée :</strong> Souvent supérieur à 20-25 cmH₂O.</li>
                              <li><strong>EPAP :</strong> 4-5 cmH₂O pour contrer l'auto-PEEP.</li>
                              <li><strong>Fréquence de secours (backup rate) élevée :</strong> Proche de la FR spontanée (ex: 14-18/min) pour assurer le contrôle de la ventilation.</li>
                          </ul>

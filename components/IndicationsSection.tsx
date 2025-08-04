@@ -84,7 +84,7 @@ export const IndicationsSection: React.FC = () => (
              <Recommendation
                 title="Post-extubation (Prévention chez patients à haut risque)"
                 strength="Recommandation Conditionnelle"
-                details="La VNI est suggérée pour <strong>prévenir</strong> l'échec d'extubation chez les patients à haut risque (ex: &gt;65 ans, comorbidités cardiaques, hypercapnie, toux inefficace). Elle réduit l'incidence de l'IRA post-extubation et la mortalité en USI dans ce groupe."
+                details="La VNI est suggérée pour <strong>prévenir</strong> l'échec d'extubation chez les patients à haut risque (ex: supérieur à 65 ans, comorbidités cardiaques, hypercapnie, toux inefficace). Elle réduit l'incidence de l'IRA post-extubation et la mortalité en USI dans ce groupe."
                 icon={<Shield className="w-8 h-8 text-blue-600"/>}
                 variant="conditional"
             />

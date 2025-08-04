@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { SlidersHorizontal, ListChecks, User, Wind, Activity, CheckCircle, AlertTriangle, Home } from './icons';
 import { Accordion } from './Accordion';
@@ -60,7 +61,7 @@ export const NmdInitiationSection: React.FC = () => (
                 L'essai initial, d'une durée de 1 à 2 heures, se déroule de préférence en journée pour acclimater le patient.
             </p>
             <ol className="list-decimal list-inside space-y-4 text-slate-700">
-                <li><strong>Position du patient :</strong> Confortablement installé en position semi-assise (≥ 30°).</li>
+                <li><strong>Position du patient :</strong> Confortablement installé en position semi-assise (supérieur ou égal à 30°).</li>
                 <li><strong>Mesures de base :</strong> Monitorage de la SpO₂. Si possible, tcCO₂ ou GDS avant et après l'essai pour objectiver une amélioration.</li>
                 <li><strong>Réglages initiaux (Start Low, Go Slow) :</strong> Commencer avec des pressions basses pour favoriser la tolérance. Le mode S/T (spontané/temporisé) est le plus utilisé.
                     <ul className="list-['-_'] list-inside pl-5 mt-2 text-sm">

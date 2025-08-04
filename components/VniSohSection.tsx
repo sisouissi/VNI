@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { User, ListChecks, Target, AlertTriangle, Wind, SlidersHorizontal, CheckCircle, Activity, Siren, TrendingUp, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -39,8 +40,8 @@ export const VniSohSection: React.FC = () => {
   return (
     <div className="space-y-8 pt-8">
         <KeyPointsCard>
-            <li>Le SOH est défini par l'obésité (IMC ≥30), une hypercapnie diurne (PaCO₂ ≥45 mmHg) et un trouble respiratoire du sommeil, après exclusion d'autres causes.</li>
-            <li>Pour les patients ambulatoires stables avec un SOH et un <strong>SAOS sévère (IAH ≥30), la CPAP est le traitement de première intention</strong>, pas la VNI.</li>
+            <li>Le SOH est défini par l'obésité (IMC supérieur ou égal à 30), une hypercapnie diurne (PaCO₂ supérieur ou égal à 45 mmHg) et un trouble respiratoire du sommeil, après exclusion d'autres causes.</li>
+            <li>Pour les patients ambulatoires stables avec un SOH et un <strong>SAOS sévère (IAH supérieur ou égal à 30), la CPAP est le traitement de première intention</strong>, pas la VNI.</li>
             <li>La <strong>VNI (Bi-level PAP)</strong> est réservée aux patients SOH avec une hypoventilation non-obstructive, en cas d'échec de la CPAP, ou en cas de décompensation aiguë.</li>
             <li>Les patients hospitalisés pour une décompensation aiguë doivent être <strong>systématiquement mis sous VNI et sortis de l'hôpital avec</strong>, en attendant une polysomnographie. Cette stratégie réduit drastiquement la mortalité à 3 mois.</li>
             <li>La <strong>perte de poids</strong> (25-30%) est le seul traitement curatif et doit être systématiquement proposée, incluant la discussion sur la chirurgie bariatrique.</li>
@@ -52,8 +53,8 @@ export const VniSohSection: React.FC = () => {
                 <InfoCard title="Diagnostic" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
                     <p>Le diagnostic repose sur 3 piliers :</p>
                     <ol className="list-decimal list-inside mt-2 space-y-1">
-                        <li><strong>Obésité :</strong> IMC ≥ 30 kg/m².</li>
-                        <li><strong>Hypercapnie diurne :</strong> PaCO₂ ≥ 45 mmHg à l'état vigile, confirmée par gazométrie artérielle.</li>
+                        <li><strong>Obésité :</strong> IMC supérieur ou égal à 30 kg/m².</li>
+                        <li><strong>Hypercapnie diurne :</strong> PaCO₂ supérieur ou égal à 45 mmHg à l'état vigile, confirmée par gazométrie artérielle.</li>
                         <li><strong>Trouble Respiratoire du Sommeil :</strong> Démontré par polysomnographie. Environ 90% des patients ont un SAOS associé (70% ont un SAOS sévère).</li>
                     </ol>
                     <p className="mt-2 font-semibold">Le dosage des bicarbonates sériques est un excellent outil de dépistage : un taux <strong>inférieur à 27 mmol/L</strong> rend le SOH très improbable.</p>
@@ -73,7 +74,7 @@ export const VniSohSection: React.FC = () => {
              <p className="text-slate-700 mb-4 text-base">C'est le point central des recommandations. Contrairement aux idées reçues, la VNI n'est pas le traitement de première ligne pour la majorité des patients SOH stables.</p>
              <div className="grid md:grid-cols-2 gap-6">
                 <InfoCard title="CPAP en Première Ligne" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
-                    <p className="font-semibold">Pour les patients SOH stables avec un SAOS sévère concomitant (IAH ≥30), ce qui représente ~70% des cas.</p>
+                    <p className="font-semibold">Pour les patients SOH stables avec un SAOS sévère concomitant (IAH supérieur ou égal à 30), ce qui représente ~70% des cas.</p>
                     <p className="mt-2">Plusieurs essais randomisés ont montré que la CPAP est <strong>aussi efficace que la VNI</strong> pour améliorer l'hypercapnie, la somnolence et la qualité de vie, avec un coût moindre.</p>
                     <p className="mt-2"><strong>Mécanisme :</strong> En levant l'obstruction, la CPAP permet au patient de "récupérer" et de normaliser sa ventilation, corrigeant l'hypercapnie accumulée.</p>
                 </InfoCard>
@@ -88,7 +89,7 @@ export const VniSohSection: React.FC = () => {
                     Quand passer de la CPAP à la VNI ?
                 </h5>
                 <p className="text-sm text-amber-700 mt-2">
-                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong> (supérieur à plusieurs minutes à &lt;88%).
+                   Une VNI (Bi-level) est indiquée en seconde ligne si, malgré une bonne observance de la CPAP et une correction des événements obstructifs, le patient présente une <strong>hypercapnie diurne persistante</strong> ou une <strong>hypoventilation/désaturation nocturne significative</strong> (supérieur à plusieurs minutes à inférieur à 88%).
                 </p>
             </div>
         </Accordion>

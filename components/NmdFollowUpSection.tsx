@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Activity, Users, CheckCircle, AlertTriangle, TrendingUp, TrendingDown, ShieldX, Wind, Wrench, Heart, User } from './icons';
 import { Accordion } from './Accordion';
@@ -43,7 +44,7 @@ export const NmdFollowUpSection: React.FC = () => (
                     <p className="font-semibold">Objectifs cibles :</p>
                     <ul className="list-disc list-inside mt-2 space-y-1">
                         <li><strong>PaCO₂ diurne :</strong> Normale ou quasi-normale. Une PaCO₂ jusqu'à 60 mmHg peut être acceptée si les symptômes sont bien contrôlés.</li>
-                        <li><strong>SpO₂ nocturne :</strong> ≥ 90% pendant ≥ 95% du temps de sommeil.</li>
+                        <li><strong>SpO₂ nocturne :</strong> supérieur ou égal à 90% pendant supérieur ou égal à 95% du temps de sommeil.</li>
                     </ul>
                 </InfoCard>
             </div>

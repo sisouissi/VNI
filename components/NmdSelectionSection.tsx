@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Target, ListChecks, CheckCircle, XCircle, AlertTriangle, Wind, Activity, Users, Shield, Heart, ShieldX } from './icons';
 import { Accordion } from './Accordion';
@@ -37,8 +38,8 @@ export const NmdSelectionSection: React.FC = () => (
                     <li>
                         <strong>Évidence physiologique d'hypoventilation nocturne/diurne :</strong>
                         <ul className="list-['-_'] list-inside pl-4 mt-1 font-semibold">
-                            <li>PaCO₂ diurne ≥ 45 mmHg</li>
-                            <li>OU Hypoventilation nocturne avec désaturation en oxygène (ex: SpO₂ ≤ 88% pendant &gt;5 min en continu) ET symptômes.</li>
+                            <li>PaCO₂ diurne supérieur ou égal à 45 mmHg</li>
+                            <li>OU Hypoventilation nocturne avec désaturation en oxygène (ex: SpO₂ inférieur ou égal à 88% pendant supérieur à 5 min en continu) ET symptômes.</li>
                         </ul>
                     </li>
                      <li>

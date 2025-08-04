@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { ListChecks, AlertTriangle, CheckCircle, XCircle, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -85,7 +86,7 @@ export const PedGeneralitesSection: React.FC = () => {
                 <ul className="list-disc list-inside space-y-1">
                     <li>Arrêt cardio-respiratoire.</li>
                     <li>Instabilité hémodynamique sévère.</li>
-                    <li>Altération profonde de la conscience (GCS &lt; 8).</li>
+                    <li>Altération profonde de la conscience (GCS inférieur à 8).</li>
                     <li>Risque d'inhalation élevé (vomissements, absence de réflexes de protection).</li>
                     <li>Traumatisme facial majeur.</li>
                 </ul>

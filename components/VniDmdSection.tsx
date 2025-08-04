@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Shield, Activity, Heart, AlertTriangle, Users, BookOpen, Wind, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -68,7 +69,7 @@ export const VniDmdSection: React.FC = () => {
                     <ul className="list-disc list-inside mt-2 space-y-1">
                          <li><strong>Indication :</strong> Enseignement de la toux manuellement assistée lorsque le débit de toux de pointe (PCF) est inférieur à 270 L/min.</li>
                          <li><strong>Technique :</strong> La toux est assistée après avoir augmenté le volume pulmonaire par "air stacking" (empilement d'air).</li>
-                         <li><strong>En cas de rhume :</strong> L'objectif est de maintenir une SpO₂ &gt; 94% en intensifiant l'aide à la toux et la VNI.</li>
+                         <li><strong>En cas de rhume :</strong> L'objectif est de maintenir une SpO₂ supérieur à 94% en intensifiant l'aide à la toux et la VNI.</li>
                     </ul>
                 </InfoCard>
             </div>

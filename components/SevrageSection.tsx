@@ -76,10 +76,10 @@ export const SevrageSection: React.FC = () => (
                     "État mental adéquat (éveillé, coopératif)."
                 ]} />
                 <CriteriaList title="Critères Objectifs" icon={<ListChecks className="w-5 h-5 text-slate-600" />} criteria={[
-                    "<b>Stabilité hémodynamique :</b> FC ≤ 140/min, PAS 90-160 mmHg, vasopresseurs minimes ou absents.",
-                    "<b>Oxygénation adéquate :</b> SpO₂ ≥ 90% avec FiO₂ ≤ 40%, ou PaO₂/FiO₂ ≥ 150.",
-                    "<b>Support ventilatoire faible :</b> PEEP ≤ 8 cmH₂O.",
-                    "<b>Mécanique respiratoire :</b> FR inférieur à 35/min, Vt ≥ 5 ml/kg.",
+                    "<b>Stabilité hémodynamique :</b> FC inférieur ou égal à 140/min, PAS 90-160 mmHg, vasopresseurs minimes ou absents.",
+                    "<b>Oxygénation adéquate :</b> SpO₂ supérieur ou égal à 90% avec FiO₂ inférieur ou égal à 40%, ou PaO₂/FiO₂ supérieur ou égal à 150.",
+                    "<b>Support ventilatoire faible :</b> PEEP inférieur ou égal à 8 cmH₂O.",
+                    "<b>Mécanique respiratoire :</b> FR inférieur à 35/min, Vt supérieur ou égal à 5 ml/kg.",
                     "Absence d'épisodes d'apnée significatifs."
                 ]} />
             </div>
@@ -139,8 +139,8 @@ export const SevrageSection: React.FC = () => (
                  <div>
                     <h4 className="text-lg font-semibold text-red-800 mb-3">Signes d'Échec du Sevrage</h4>
                      <div className="space-y-2">
-                        <PredictorCard title="Rapport PaO₂/FiO₂" value="≤ 200" success={false} description="Baseline ou à 1h" />
-                        <PredictorCard title="Fréquence Respiratoire" value="≥ 30 /min" success={false} />
+                        <PredictorCard title="Rapport PaO₂/FiO₂" value="inférieur ou égal à 200" success={false} description="Baseline ou à 1h" />
+                        <PredictorCard title="Fréquence Respiratoire" value="supérieur ou égal à 30 /min" success={false} />
                         <PredictorCard title="Volume Courant (Vt)" value="supérieur à 9 ml/kg" success={false} />
                         <PredictorCard title="Index ROX" value="inférieur à 4.88" success={false} description="À 12h de VNI" />
                         <PredictorCard title="Score HACOR" value="supérieur à 5" success={false} description="Dans la première heure" />
@@ -162,9 +162,9 @@ export const SevrageSection: React.FC = () => (
                     <div className="p-4 bg-slate-700/50 border-l-4 border-blue-400 rounded-r-lg">
                         <h3 className="font-bold text-blue-300">1. Critères d'Éligibilité au Sevrage</h3>
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
-                        <li>PaO₂/FiO₂ supérieur à 200 mmHg avec FiO₂ &lt; 0.5</li>
+                        <li>PaO₂/FiO₂ supérieur à 200 mmHg avec FiO₂ inférieur à 0.5</li>
                         <li>pH supérieur à 7.35</li>
-                        <li>FR &lt; 25/min sans muscles accessoires</li>
+                        <li>FR inférieur à 25/min sans muscles accessoires</li>
                         <li>Stabilité hémodynamique</li>
                         </ul>
                     </div>
@@ -199,7 +199,7 @@ export const SevrageSection: React.FC = () => (
                         <ul className="mt-2 list-disc list-inside text-sm text-slate-300">
                             <li>Instabilité hémodynamique</li>
                             <li>Détresse respiratoire</li>
-                            <li>pH &lt; 7.35</li>
+                            <li>pH inférieur à 7.35</li>
                         </ul>
                         <div className="flex justify-center text-2xl font-bold text-red-400 mt-3">↓</div>
                         <div className="mt-3 p-3 bg-red-900/50 text-red-200 rounded-lg text-center font-semibold">

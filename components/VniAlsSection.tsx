@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { BrainCircuit, Activity, ListChecks, Target, CheckCircle, Wind, Wrench, AlertTriangle, Home, User, SlidersHorizontal, Users } from './icons';
 import { Accordion } from './Accordion';
@@ -48,7 +49,7 @@ export const VniAlsSection: React.FC = () => {
         <KeyPointsCard>
             <li>La VNI est le traitement de référence, même avec un support de pression faible, elle prolonge la survie.</li>
             <li>La détection précoce de l'hypoventilation nocturne est cruciale pour une initiation opportune.</li>
-            <li>L'initiation se base sur les symptômes et des mesures objectives (CVF &lt; 80%, SNIP inférieur à 40 cmH₂O).</li>
+            <li>L'initiation se base sur les symptômes et des mesures objectives (CVF inférieur à 80%, SNIP inférieur à 40 cmH₂O).</li>
             <li>La gestion de la toux et des sécrétions (ex: toux assistée, MI-E) est aussi vitale que le support ventilatoire.</li>
             <li>Avec la progression, c'est la durée d'utilisation de la VNI qui augmente, plus que les niveaux de pression.</li>
         </KeyPointsCard>
@@ -74,10 +75,10 @@ export const VniAlsSection: React.FC = () => {
                 <InfoCard title="Critères d'Initiation de la VNI" icon={<CheckCircle className="w-5 h-5"/>} variant="green">
                     <p className="font-bold">Initiation si symptômes OU un des critères suivants :</p>
                     <ul className="list-disc list-inside mt-2">
-                        <li>CVF ≤ 80%</li>
-                        <li>SNIP ≤ 40 cmH₂O</li>
+                        <li>CVF inférieur ou égal à 80%</li>
+                        <li>SNIP inférieur ou égal à 40 cmH₂O</li>
                         <li>Désaturation nocturne</li>
-                        <li>PaCO₂ matinale &gt; 6.5 kPa (49 mmHg)</li>
+                        <li>PaCO₂ matinale supérieur à 6.5 kPa (49 mmHg)</li>
                     </ul>
                 </InfoCard>
             </div>

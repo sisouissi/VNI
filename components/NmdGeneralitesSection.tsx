@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { BookOpen, Activity, Lungs, BrainCircuit, ListChecks, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -119,7 +120,7 @@ export const NmdGeneralitesSection: React.FC = () => (
                      <p className="font-semibold">Dépend des muscles inspiratoires ET expiratoires.</p>
                      <ul className="list-disc list-inside mt-2">
                         <li><strong>PEM (Pression Expiratoire Maximale) :</strong> Évalue la force des muscles expiratoires.</li>
-                        <li><strong>PCF (Peak Cough Flow) :</strong> Mesure l'efficacité de la toux. Un PCF &lt; 270 L/min est un seuil de risque, nécessitant l'initiation d'une aide à la toux.</li>
+                        <li><strong>PCF (Peak Cough Flow) :</strong> Mesure l'efficacité de la toux. Un PCF inférieur à 270 L/min est un seuil de risque, nécessitant l'initiation d'une aide à la toux.</li>
                     </ul>
                 </InfoCard>
                  <InfoCard title="3. Déglutition & Protection des Voies Aériennes" icon={<Activity className="w-5 h-5"/>} variant="amber">

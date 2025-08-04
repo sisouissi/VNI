@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import { Moon, ListChecks, Target, AlertTriangle, Wind, SlidersHorizontal, CheckCircle, Lungs, User } from './icons';
 import { Accordion } from './Accordion';
@@ -105,7 +106,7 @@ export const TosGeneralites: React.FC = () => {
              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <SettingsCard title="Pression & Volume" items={[
                     { label: 'Objectif Vt', value: '8 ml/kg (poids idéal)' },
-                    { label: 'EPAP (PEP)', value: 'Élevée (>8-12 cmH₂O)' },
+                    { label: 'EPAP (PEP)', value: 'Élevée (supérieur à 8-12 cmH₂O)' },
                     { label: 'IPAP / AI', value: 'Élevée pour atteindre le Vt' },
                 ]}/>
                  <SettingsCard title="Timing Inspiratoire" items={[

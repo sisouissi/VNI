@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { BookOpen, Activity, Lungs, BrainCircuit, ListChecks, Wrench } from './icons';
 import { Accordion } from './Accordion';
@@ -76,7 +77,7 @@ const DiseaseTable: React.FC = () => {
     );
 };
 
-export const NmdGeneralitesSection: React.FC = () => (
+export const NmdGeneralites: React.FC = () => (
     <div className="space-y-6 pt-8">
         <KeyPointsCard>
             <li>L'insuffisance respiratoire chronique est une complication fréquente et grave des maladies neuromusculaires (MNM) et des pathologies de la paroi thoracique.</li>
@@ -111,7 +112,7 @@ export const NmdGeneralitesSection: React.FC = () => (
                 <InfoCard title="1. Fonction Ventilatoire" icon={<Lungs className="w-5 h-5"/>} variant="blue">
                     <p className="font-semibold">Dépend des muscles inspiratoires.</p>
                     <ul className="list-disc list-inside mt-2">
-                        <li><strong>CVF (Capacité Vitale Forcée) :</strong> La mesure de base pour le suivi. Une chute de &gt;20% en position couchée signe une faiblesse diaphragmatique.</li>
+                        <li><strong>CVF (Capacité Vitale Forcée) :</strong> La mesure de base pour le suivi. Une chute de supérieur à 20% en position couchée signe une faiblesse diaphragmatique.</li>
                         <li><strong>PIM (Pression Inspiratoire Maximale) :</strong> Évalue la force des muscles inspiratoires.</li>
                     </ul>
                 </InfoCard>
@@ -119,7 +120,7 @@ export const NmdGeneralitesSection: React.FC = () => (
                      <p className="font-semibold">Dépend des muscles inspiratoires ET expiratoires.</p>
                      <ul className="list-disc list-inside mt-2">
                         <li><strong>PEM (Pression Expiratoire Maximale) :</strong> Évalue la force des muscles expiratoires.</li>
-                        <li><strong>PCF (Peak Cough Flow) :</strong> Mesure l'efficacité de la toux. Un PCF &lt; 270 L/min est un seuil de risque, nécessitant l'initiation d'une aide à la toux.</li>
+                        <li><strong>PCF (Peak Cough Flow) :</strong> Mesure l'efficacité de la toux. Un PCF inférieur à 270 L/min est un seuil de risque, nécessitant l'initiation d'une aide à la toux.</li>
                     </ul>
                 </InfoCard>
                  <InfoCard title="3. Déglutition & Protection des Voies Aériennes" icon={<Activity className="w-5 h-5"/>} variant="amber">

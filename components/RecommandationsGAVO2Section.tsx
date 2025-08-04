@@ -79,7 +79,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
     };
 
     const efficaciteItems = [
-        { id: 'eff_obs', label: "Observance ≥ 5h d'affilée ?" },
+        { id: 'eff_obs', label: "Observance supérieur ou égal à 5h d'affilée ?" },
         { id: 'eff_symp', label: "Amélioration des symptômes ?" },
         { id: 'eff_hypo', label: "Correction de l'hypoventilation ?" },
         { id: 'eff_event', label: "Événements nocturnes (IAH inférieur à 10/h) ?" }
@@ -310,7 +310,7 @@ export const RecommandationsGAVO2Section: React.FC = () => {
                         </MarkerCard>
                         <MarkerCard title="PtcCO₂ Nocturne" icon={<Calculator className="w-5 h-5 text-purple-500" />}>
                             <p>Permet de suivre efficacement l'hypoventilation nocturne. Sa persistance est un facteur de mauvais pronostic.</p>
-                             <p className="mt-1"><b>Exemple de cible :</b> PtcCO₂ &gt; 49 mmHg pendant inférieur à 10% du temps, et Pic PtcCO₂ inférieur à 55 mmHg.</p>
+                             <p className="mt-1"><b>Exemple de cible :</b> PtcCO₂ supérieur à 49 mmHg pendant inférieur à 10% du temps, et Pic PtcCO₂ inférieur à 55 mmHg.</p>
                         </MarkerCard>
                         <MarkerCard title="Oxymétrie Nocturne" icon={<Heart className="w-5 h-5 text-red-500" />}>
                             <p>Signal indirect et non spécifique. Une désaturation peut être liée à des fuites, des événements obstructifs ou une hypoventilation résiduelle.</p>

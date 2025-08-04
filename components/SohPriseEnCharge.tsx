@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import { Target, AlertTriangle, Wind, CheckCircle, SlidersHorizontal, Activity, Siren, User, XCircle } from './icons';
 import { Accordion } from './Accordion';
@@ -54,7 +55,7 @@ export const SohPriseEnCharge: React.FC = () => {
                     <ul className="list-disc list-inside space-y-2">
                         <li><strong>Réglages initiaux :</strong> Similaires à ceux d'un SAOS sans SOH, avec titration en laboratoire. <strong>L'Auto-CPAP ne doit pas être utilisée</strong> car son efficacité est limitée sur l'hypercapnie.</li>
                         <li><strong>Efficacité :</strong> La CPAP améliore la PaCO₂ et la qualité de vie, mais la normalisation n'est pas universelle et des désaturations nocturnes peuvent persister.</li>
-                        <li><strong>Objectifs thérapeutiques :</strong> Normalisation de la PaCO₂ (&lt;45 mmHg), élimination des désaturations, soulagement des symptômes (hypersomnolence).</li>
+                        <li><strong>Objectifs thérapeutiques :</strong> Normalisation de la PaCO₂ (inférieur à45 mmHg), élimination des désaturations, soulagement des symptômes (hypersomnolence).</li>
                     </ul>
                 </InfoCard>
                 <InfoCard title="Évaluation de la Réponse et Seconde Ligne" icon={<SlidersHorizontal className="w-5 h-5"/>} variant="amber">
@@ -88,7 +89,7 @@ export const SohPriseEnCharge: React.FC = () => {
                 <p className="font-bold">La VNI (Bi-level PAP) doit être initiée en urgence dans un environnement monitoré.</p>
                 <ul className="list-disc list-inside mt-2 space-y-2">
                     <li><strong>La CPAP ne doit PAS être utilisée</strong> dans ce contexte.</li>
-                    <li><strong>Réglages en aigu (patient naïf) :</strong> Débuter avec IPAP/EPAP à 4 cmH₂O. Augmenter l'IPAP toutes les quelques minutes de 2 cmH₂O jusqu'à amélioration du confort, de la FR (&lt;30/min), de la SpO₂ (≥90%) et du pH (&gt;7.3).</li>
+                    <li><strong>Réglages en aigu (patient naïf) :</strong> Débuter avec IPAP/EPAP à 4 cmH₂O. Augmenter l'IPAP toutes les quelques minutes de 2 cmH₂O jusqu'à amélioration du confort, de la FR (inférieur à 30/min), de la SpO₂ (supérieur ou égal à 90%) et du pH (supérieur à 7.3).</li>
                     <li><strong>Sortie d'hôpital :</strong> Tous les patients hospitalisés pour une décompensation de SOH doivent être <strong>renvoyés à domicile sous PAP (généralement Bi-level)</strong>. Cette stratégie réduit de manière drastique la mortalité à 3 mois.</li>
                 </ul>
             </InfoCard>
@@ -99,7 +100,7 @@ export const SohPriseEnCharge: React.FC = () => {
                 <ul className="list-disc list-inside space-y-2">
                     <li>L'oxygénothérapie doit être administrée <strong>uniquement si la thérapie par PAP seule est insuffisante</strong> pour corriger l'hypoxémie.</li>
                     <li className="font-bold">L'oxygène seul (sans PAP) est un traitement INADÉQUAT pour le SOH et peut aggraver dangereusement l'hypercapnie.</li>
-                    <li>Titrer le débit d'oxygène au niveau le plus bas permettant de maintenir une SpO₂ &gt; 90%.</li>
+                    <li>Titrer le débit d'oxygène au niveau le plus bas permettant de maintenir une SpO₂ supérieur à 90%.</li>
                     <li>La nécessité d'oxygène diminue souvent après 1 à 3 mois de traitement par PAP efficace. Une réévaluation est donc nécessaire.</li>
                 </ul>
             </InfoCard>
